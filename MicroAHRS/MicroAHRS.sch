@@ -1,0 +1,707 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PowerManagement
+LIBS:tag_connect
+LIBS:mems
+LIBS:amphenol_conn
+LIBS:mechanical
+LIBS:MicroAHRS-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MicroAHRS Magnetometer Functionality Module"
+Date ""
+Rev "0.1"
+Comp ""
+Comment1 "EE-00001-001"
+Comment2 "EE-00001-002"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+$Comp
+L ATMEGA328P-A IC1
+U 1 1 56F13B84
+P 6000 2450
+F 0 "IC1" H 5250 3700 50  0000 L BNN
+F 1 "ATMEGA328P-A" H 6400 1050 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 6000 2450 50  0001 C CIN
+F 3 "" H 6000 2450 50  0000 C CNN
+F 4 "ATMEGA328P-AUR" H 6000 2450 60  0001 C CNN "manf#"
+	1    6000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117 U1
+U 1 1 56F1439A
+P 2350 2950
+F 0 "U1" H 2150 3150 60  0000 C CNN
+F 1 "LD1117" H 2050 2600 60  0000 C CNN
+F 2 "PowerPackages:SOT-223" H 2350 2950 60  0001 C CNN
+F 3 "" H 2350 2950 60  0000 C CNN
+F 4 "LD1117S33CTR" H 2350 2950 60  0001 C CNN "manf#"
+	1    2350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L TC2030-IDC-NL-AVR P2
+U 1 1 56F2E511
+P 9550 2150
+F 0 "P2" H 9450 2600 60  0000 C CNN
+F 1 "TC2030-IDC-NL-AVR" H 9650 1750 60  0000 C CNN
+F 2 "connectors:TC2030-IDC-NL-AVR" H 9550 2150 60  0001 C CNN
+F 3 "" H 9550 2150 60  0000 C CNN
+F 4 "TC2030-IDC-NL" H 9550 2150 60  0001 C CNN "manf#"
+	1    9550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HMC5883 U2
+U 1 1 56F2E785
+P 5250 5500
+F 0 "U2" H 4900 6050 60  0000 C CNN
+F 1 "HMC5883" H 4750 5000 60  0000 C CNN
+F 2 "LCC:LCC16" H 5200 5600 60  0001 C CNN
+F 3 "" H 5200 5600 60  0000 C CNN
+F 4 "HMC5883L-TR" H 5000 6150 60  0001 C CNN "manf#"
+	1    5250 5500
+	1    0    0    -1  
+$EndComp
+Text Label 8750 2150 0    60   ~ 0
+MOSI
+Text Label 8750 1850 0    60   ~ 0
+MISO
+Text Label 8750 2050 0    60   ~ 0
+SCK
+Text Label 8750 2250 0    60   ~ 0
+RST
+Text Label 8750 1950 0    60   ~ 0
+VDD
+Text Label 4350 1450 0    60   ~ 0
+VDD
+$Comp
+L Earth #PWR01
+U 1 1 56F2E9A0
+P 4800 3700
+F 0 "#PWR01" H 4800 3450 50  0001 C CNN
+F 1 "Earth" H 4800 3550 50  0001 C CNN
+F 2 "" H 4800 3700 50  0000 C CNN
+F 3 "" H 4800 3700 50  0000 C CNN
+	1    4800 3700
+	1    0    0    -1  
+$EndComp
+Text Label 3500 2900 0    60   ~ 0
+VDD
+$Comp
+L Earth #PWR02
+U 1 1 56F2EA43
+P 2350 3500
+F 0 "#PWR02" H 2350 3250 50  0001 C CNN
+F 1 "Earth" H 2350 3350 50  0001 C CNN
+F 2 "" H 2350 3500 50  0000 C CNN
+F 3 "" H 2350 3500 50  0000 C CNN
+	1    2350 3500
+	1    0    0    -1  
+$EndComp
+Text Label 7200 1650 0    60   ~ 0
+MOSI
+Text Label 7200 1750 0    60   ~ 0
+MISO
+Text Label 7200 1850 0    60   ~ 0
+SCK
+Text Label 7200 2800 0    60   ~ 0
+RST
+$Comp
+L Earth #PWR03
+U 1 1 56F2EBC0
+P 8750 2400
+F 0 "#PWR03" H 8750 2150 50  0001 C CNN
+F 1 "Earth" H 8750 2250 50  0001 C CNN
+F 2 "" H 8750 2400 50  0000 C CNN
+F 3 "" H 8750 2400 50  0000 C CNN
+	1    8750 2400
+	1    0    0    -1  
+$EndComp
+Text Label 650  2900 0    60   ~ 0
+VBAT
+$Comp
+L C C1
+U 1 1 56F2EDA3
+P 1700 3050
+F 0 "C1" H 1725 3150 50  0000 L CNN
+F 1 "0.1 uF" H 1725 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1738 2900 50  0001 C CNN
+F 3 "" H 1700 3050 50  0000 C CNN
+F 4 "CL05B104KO5NNNC" H 1700 3050 60  0001 C CNN "manf#"
+	1    1700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56F2EDE4
+P 2850 3050
+F 0 "C2" H 2875 3150 50  0000 L CNN
+F 1 "10 uF" H 2875 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2888 2900 50  0001 C CNN
+F 3 "" H 2850 3050 50  0000 C CNN
+F 4 "GRM21BR61C106KE15K" H 2850 3050 60  0001 C CNN "manf#"
+	1    2850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 56F2EE67
+P 1700 3350
+F 0 "#PWR04" H 1700 3100 50  0001 C CNN
+F 1 "Earth" H 1700 3200 50  0001 C CNN
+F 2 "" H 1700 3350 50  0000 C CNN
+F 3 "" H 1700 3350 50  0000 C CNN
+	1    1700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 56F2EE87
+P 2850 3350
+F 0 "#PWR05" H 2850 3100 50  0001 C CNN
+F 1 "Earth" H 2850 3200 50  0001 C CNN
+F 2 "" H 2850 3350 50  0000 C CNN
+F 3 "" H 2850 3350 50  0000 C CNN
+	1    2850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS D1
+U 1 1 56F2F061
+P 1350 3200
+F 0 "D1" H 1350 3350 50  0000 C CNN
+F 1 "TVS" H 1350 3050 50  0000 C CNN
+F 2 "Diodes:TVS_0603" H 1350 3200 50  0001 C CNN
+F 3 "" H 1350 3200 50  0000 C CNN
+F 4 "CD0603-T12C" H 1350 3200 60  0001 C CNN "manf#"
+	1    1350 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 56F2F112
+P 1350 3550
+F 0 "#PWR06" H 1350 3300 50  0001 C CNN
+F 1 "Earth" H 1350 3400 50  0001 C CNN
+F 2 "" H 1350 3550 50  0000 C CNN
+F 3 "" H 1350 3550 50  0000 C CNN
+	1    1350 3550
+	1    0    0    -1  
+$EndComp
+Text Label 7200 2600 0    60   ~ 0
+I2C_SDA
+Text Label 7200 2700 0    60   ~ 0
+I2C_SCL
+NoConn ~ 5100 2800
+NoConn ~ 5100 2700
+NoConn ~ 5100 1950
+Text Label 7200 2950 0    60   ~ 0
+UART_RX
+Text Label 7200 3050 0    60   ~ 0
+UART_TX
+NoConn ~ 7000 1450
+NoConn ~ 7000 1350
+NoConn ~ 7000 3650
+NoConn ~ 7000 3550
+NoConn ~ 7000 3450
+NoConn ~ 7000 3350
+NoConn ~ 7000 3250
+NoConn ~ 7000 2500
+NoConn ~ 7000 2400
+NoConn ~ 7000 2300
+NoConn ~ 7000 2200
+NoConn ~ 7000 2050
+NoConn ~ 7000 1950
+Text Label 5100 4700 1    60   ~ 0
+I2C_SDA
+Text Label 3900 5350 0    60   ~ 0
+I2C_SCL
+Text Label 3900 5450 0    60   ~ 0
+VDD
+Text Label 5400 4300 0    60   ~ 0
+VDD
+Text Label 5200 4700 1    60   ~ 0
+DRDY_MAG
+Text Label 7200 3150 0    60   ~ 0
+DRDY_MAG
+$Comp
+L Earth #PWR07
+U 1 1 56F2FAA0
+P 6250 6150
+F 0 "#PWR07" H 6250 5900 50  0001 C CNN
+F 1 "Earth" H 6250 6000 50  0001 C CNN
+F 2 "" H 6250 6150 50  0000 C CNN
+F 3 "" H 6250 6150 50  0000 C CNN
+	1    6250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 56F2FBEA
+P 6950 5500
+F 0 "C6" H 6975 5600 50  0000 L CNN
+F 1 "0.22 uF" H 6975 5400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6988 5350 50  0001 C CNN
+F 3 "" H 6950 5500 50  0000 C CNN
+F 4 "LMK105BJ224KV-F" H 6950 5500 60  0001 C CNN "manf#"
+	1    6950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR08
+U 1 1 56F2FE60
+P 6050 4900
+F 0 "#PWR08" H 6050 4650 50  0001 C CNN
+F 1 "Earth" H 6050 4750 50  0001 C CNN
+F 2 "" H 6050 4900 50  0000 C CNN
+F 3 "" H 6050 4900 50  0000 C CNN
+	1    6050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 56F2FE92
+P 4200 6050
+F 0 "#PWR09" H 4200 5800 50  0001 C CNN
+F 1 "Earth" H 4200 5900 50  0001 C CNN
+F 2 "" H 4200 6050 50  0000 C CNN
+F 3 "" H 4200 6050 50  0000 C CNN
+	1    4200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1350 5100 1650
+Wire Wire Line
+	4350 1450 5100 1450
+Connection ~ 5100 1450
+Wire Wire Line
+	4800 3700 4800 3650
+Wire Wire Line
+	5100 3650 4800 3650
+Wire Wire Line
+	5100 3450 5100 3650
+Connection ~ 5100 3550
+Wire Wire Line
+	2800 2900 3500 2900
+Wire Wire Line
+	2350 3500 2350 3400
+Wire Wire Line
+	7000 2800 7200 2800
+Wire Wire Line
+	7000 1850 7200 1850
+Wire Wire Line
+	7000 1750 7200 1750
+Wire Wire Line
+	7000 1650 7200 1650
+Wire Wire Line
+	8750 2400 8750 2350
+Wire Wire Line
+	8750 2350 9200 2350
+Wire Wire Line
+	8750 2250 9200 2250
+Wire Wire Line
+	8750 2150 9200 2150
+Wire Wire Line
+	8750 2050 9200 2050
+Wire Wire Line
+	8750 1950 9200 1950
+Wire Wire Line
+	8750 1850 9200 1850
+Wire Wire Line
+	650  2900 1900 2900
+Wire Wire Line
+	1700 3200 1700 3350
+Wire Wire Line
+	2850 3350 2850 3200
+Connection ~ 1700 2900
+Connection ~ 2850 2900
+Wire Wire Line
+	1350 3550 1350 3500
+Connection ~ 1350 2900
+Wire Wire Line
+	7000 2700 7200 2700
+Wire Wire Line
+	7000 2600 7200 2600
+Wire Wire Line
+	7000 3050 7200 3050
+Wire Wire Line
+	7000 2950 7200 2950
+Wire Wire Line
+	3900 5350 4650 5350
+Wire Wire Line
+	5100 4850 5100 4700
+Wire Wire Line
+	3900 5450 4650 5450
+Wire Wire Line
+	5400 4300 5400 4850
+Wire Wire Line
+	5900 5450 6100 5450
+Wire Wire Line
+	6100 5450 6100 5650
+Wire Wire Line
+	5900 5650 6250 5650
+Wire Wire Line
+	5200 4850 5200 4700
+Wire Wire Line
+	7000 3150 7200 3150
+Wire Wire Line
+	6250 5650 6250 6150
+Connection ~ 6100 5650
+Wire Wire Line
+	4650 5650 4500 5650
+Wire Wire Line
+	4500 5650 4500 5450
+Connection ~ 4500 5450
+Wire Wire Line
+	5900 5350 6950 5350
+Wire Wire Line
+	5400 6100 6950 6100
+Wire Wire Line
+	6950 6100 6950 5650
+$Comp
+L C C3
+U 1 1 56F2FFB9
+P 4200 5700
+F 0 "C3" H 4225 5800 50  0000 L CNN
+F 1 "0.1 uF" H 4225 5600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4238 5550 50  0001 C CNN
+F 3 "" H 4200 5700 50  0000 C CNN
+F 4 "CL05B104KO5NNNC" H 4200 5700 60  0001 C CNN "manf#"
+	1    4200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 56F3011B
+P 6050 4650
+F 0 "C4" H 6075 4750 50  0000 L CNN
+F 1 "0.1 uF" H 6075 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6088 4500 50  0001 C CNN
+F 3 "" H 6050 4650 50  0000 C CNN
+F 4 "CL05B104KO5NNNC" H 6050 4650 60  0001 C CNN "manf#"
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6050 4200 5850
+Wire Wire Line
+	4200 5550 4200 5450
+Connection ~ 4200 5450
+Wire Wire Line
+	5400 4500 6050 4500
+Connection ~ 5400 4500
+Wire Wire Line
+	6050 4900 6050 4800
+$Comp
+L C C5
+U 1 1 56F303F6
+P 6550 5700
+F 0 "C5" H 6575 5800 50  0000 L CNN
+F 1 "4.7 uF" H 6575 5600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 6588 5550 50  0001 C CNN
+F 3 "" H 6550 5700 50  0000 C CNN
+F 4 "TCJB475M025R0150" H 6550 5700 60  0001 C CNN "manf#"
+	1    6550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5550 6550 5550
+Wire Wire Line
+	6250 5900 6550 5900
+Wire Wire Line
+	6550 5900 6550 5850
+Connection ~ 6250 5900
+Text Label 7750 5950 0    60   ~ 0
+I2C_SCL
+Text Label 7750 6150 0    60   ~ 0
+I2C_SDA
+Text Label 8700 5400 0    60   ~ 0
+VDD
+$Comp
+L R R1
+U 1 1 56F306D4
+P 8500 5650
+F 0 "R1" V 8600 5650 50  0000 C CNN
+F 1 "2.2K" V 8400 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8430 5650 50  0001 C CNN
+F 3 "" H 8500 5650 50  0000 C CNN
+F 4 "RC0603FR-072K2L" V 8500 5650 60  0001 C CNN "manf#"
+	1    8500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56F307A7
+P 8850 5650
+F 0 "R2" V 8950 5650 50  0000 C CNN
+F 1 "2.2K" V 8750 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8780 5650 50  0001 C CNN
+F 3 "" H 8850 5650 50  0000 C CNN
+F 4 "RC0603FR-072K2L" V 8850 5650 60  0001 C CNN "manf#"
+	1    8850 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5500 8850 5500
+Wire Wire Line
+	8700 5500 8700 5400
+Connection ~ 8700 5500
+Wire Wire Line
+	7750 5950 8500 5950
+Wire Wire Line
+	8500 5950 8500 5800
+Wire Wire Line
+	7750 6150 8850 6150
+Wire Wire Line
+	8850 6150 8850 5800
+$Comp
+L 12-04PFFP-SF8001 P1
+U 1 1 56F30E08
+P 1550 1750
+F 0 "P1" H 1500 2000 60  0000 C CNN
+F 1 "12-04PFFP-SF8001" H 1650 1400 60  0000 C CNN
+F 2 "connectors:12-04PFFP-SF8001" H 1550 1750 60  0001 C CNN
+F 3 "" H 1500 2000 60  0000 C CNN
+F 4 "12-04PFFP-SF8001" H 1600 2100 60  0001 C CNN "manf#"
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Text Label 650  1600 0    60   ~ 0
+VBAT
+$Comp
+L Earth #PWR010
+U 1 1 56F31230
+P 1100 2200
+F 0 "#PWR010" H 1100 1950 50  0001 C CNN
+F 1 "Earth" H 1100 2050 50  0001 C CNN
+F 2 "" H 1100 2200 50  0000 C CNN
+F 3 "" H 1100 2200 50  0000 C CNN
+	1    1100 2200
+	1    0    0    -1  
+$EndComp
+Text Label 650  1900 0    60   ~ 0
+UART_RX
+Text Label 650  1800 0    60   ~ 0
+UART_TX
+Wire Wire Line
+	650  1600 1250 1600
+Wire Wire Line
+	1100 2200 1100 1700
+Wire Wire Line
+	1100 1700 1250 1700
+Wire Wire Line
+	650  1800 1250 1800
+Wire Wire Line
+	650  1900 1250 1900
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 56F31752
+P 1050 1600
+F 0 "#FLG011" H 1050 1695 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 1780 50  0000 C CNN
+F 2 "" H 1050 1600 50  0000 C CNN
+F 3 "" H 1050 1600 50  0000 C CNN
+	1    1050 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1050 1600
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 56F32CAB
+P 1600 3800
+F 0 "#FLG012" H 1600 3895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 3980 50  0000 C CNN
+F 2 "" H 1600 3800 50  0000 C CNN
+F 3 "" H 1600 3800 50  0000 C CNN
+	1    1600 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3800 1600 3250
+Wire Wire Line
+	1600 3250 1700 3250
+Connection ~ 1700 3250
+Wire Notes Line
+	600  1300 2150 1300
+Wire Notes Line
+	2150 1300 2150 2400
+Wire Notes Line
+	2150 2400 600  2400
+Wire Notes Line
+	600  2400 600  1300
+Text Notes 550  1250 0    60   ~ 0
+Input power+serial connector (M12)
+Text Notes 650  2650 0    60   ~ 0
+Power Supply
+Wire Notes Line
+	600  2700 3700 2700
+Wire Notes Line
+	3700 2700 3700 4050
+Wire Notes Line
+	3700 4050 600  4050
+Wire Notes Line
+	600  4050 600  2700
+Text Notes 550  4350 0    60   ~ 0
+Layout note: Place decoupling capacitors close to regulator!\n\nPlace TVS Diode as close to connector as possible!
+Text Notes 3850 6450 0    60   ~ 0
+Layout note: Do NOT route any traces under magnetometer!
+Text Notes 3500 6600 0    60   ~ 0
+Place decoupling capacitors as close to corresponding pins as possible!
+Wire Notes Line
+	7650 5250 7650 6250
+Wire Notes Line
+	7650 5250 9000 5250
+Wire Notes Line
+	9000 5250 9000 6250
+Wire Notes Line
+	9000 6250 7650 6250
+Text Notes 7650 5200 0    60   ~ 0
+I2C Pull-ups
+Wire Notes Line
+	3850 4200 7300 4200
+Wire Notes Line
+	7300 4200 7300 6300
+Wire Notes Line
+	7300 6300 3850 6300
+Wire Notes Line
+	3850 6300 3850 4200
+Text Notes 3900 4150 0    60   ~ 0
+Magnetometer
+Wire Notes Line
+	8650 1650 10250 1650
+Wire Notes Line
+	10250 1650 10250 2600
+Wire Notes Line
+	10250 2600 8650 2600
+Wire Notes Line
+	8650 2600 8650 1650
+Text Notes 8650 1600 0    60   ~ 0
+Programming/Debug header
+$Comp
+L PTH TH1
+U 1 1 56F378D7
+P 1750 5450
+F 0 "TH1" H 1550 5350 60  0000 C CNN
+F 1 "PTH" H 1550 5600 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 1750 5450 60  0001 C CNN
+F 3 "" H 1750 5450 60  0000 C CNN
+	1    1750 5450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 5450
+$Comp
+L CONN_02X04 P3
+U 1 1 572A2FC7
+P 9400 3450
+F 0 "P3" H 9400 3700 50  0000 C CNN
+F 1 "CONN_02X04" H 9400 3200 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x04" H 9400 2250 50  0001 C CNN
+F 3 "" H 9400 2250 50  0000 C CNN
+F 4 "PPTC042LFBN-RC" H 9400 3450 60  0001 C CNN "manf#"
+	1    9400 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 8650 3050 0    60   ~ 0
+Wireless module connector
+Text Label 8900 3600 0    60   ~ 0
+MISO
+Text Label 9850 3500 0    60   ~ 0
+MOSI
+Text Label 9850 3300 0    60   ~ 0
+VDD
+Text Label 8900 3500 0    60   ~ 0
+SCK
+$Comp
+L Earth #PWR013
+U 1 1 572A31F5
+P 8750 3300
+F 0 "#PWR013" H 8750 3050 50  0001 C CNN
+F 1 "Earth" H 8750 3150 50  0001 C CNN
+F 2 "" H 8750 3300 50  0000 C CNN
+F 3 "" H 8750 3300 50  0000 C CNN
+	1    8750 3300
+	1    0    0    -1  
+$EndComp
+Text Label 7200 1550 0    60   ~ 0
+CS_NRF
+Wire Wire Line
+	7000 1550 7200 1550
+Text Label 9850 3400 0    60   ~ 0
+CS_NRF
+Wire Wire Line
+	8750 3300 9150 3300
+Wire Wire Line
+	9650 3300 9850 3300
+Wire Wire Line
+	9650 3400 9850 3400
+Wire Wire Line
+	8900 3500 9150 3500
+Wire Wire Line
+	8900 3600 9150 3600
+Wire Wire Line
+	9650 3500 9850 3500
+NoConn ~ 9650 3600
+NoConn ~ 9150 3400
+Wire Notes Line
+	8650 3100 10250 3100
+Wire Notes Line
+	10250 3100 10250 3750
+Wire Notes Line
+	10250 3750 8650 3750
+Wire Notes Line
+	8650 3750 8650 3100
+Wire Notes Line
+	4100 1100 7800 1100
+Wire Notes Line
+	7800 1100 7800 3950
+Wire Notes Line
+	7800 3950 4100 3950
+Wire Notes Line
+	4100 3950 4100 1100
+Text Notes 4100 1050 0    60   ~ 0
+Microcontroller
+Text Notes 1300 5100 0    60   ~ 0
+Mounting Hole
+Wire Notes Line
+	1300 5150 2150 5150
+Wire Notes Line
+	2150 5150 2150 5700
+Wire Notes Line
+	2150 5700 1300 5700
+Wire Notes Line
+	1300 5700 1300 5150
+$EndSCHEMATC

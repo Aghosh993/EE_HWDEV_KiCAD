@@ -1,0 +1,318 @@
+EESchema Schematic File Version 2
+LIBS:RPi_IFaceBoard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:PowerManagement
+LIBS:ir_drivers
+LIBS:mechanical
+LIBS:diodes
+LIBS:RPi_IFaceBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2300 2450 0    60   Input ~ 0
+PWM0_IN
+Text HLabel 2300 2600 0    60   Input ~ 0
+PWM1_IN
+Text HLabel 2300 2750 0    60   Input ~ 0
+PWM2_IN
+Text HLabel 2300 2900 0    60   Input ~ 0
+PWM3_IN
+Text HLabel 2450 3800 0    60   Input ~ 0
+PWM4_IN
+Text HLabel 2450 3900 0    60   Input ~ 0
+PWM5_IN
+Text HLabel 2450 4000 0    60   Input ~ 0
+PWM6_IN
+Text HLabel 2450 4100 0    60   Input ~ 0
+PWM7_IN
+Text HLabel 2500 5850 0    60   Input ~ 0
+PWM8_IN
+Text HLabel 2500 6050 0    60   Input ~ 0
+PWM9_IN
+Text HLabel 2350 800  0    60   Input ~ 0
+VDD_3V0
+Text HLabel 2350 2150 0    60   Input ~ 0
+SYSTEM_GND
+$Comp
+L CM1213A-D D9
+U 1 1 56EFD10F
+P 4100 1500
+F 0 "D9" H 3850 2050 60  0000 C CNN
+F 1 "CM1213A-D" H 3550 1050 60  0000 C CNN
+F 2 "" H 4100 1500 60  0001 C CNN
+F 3 "" H 4100 1500 60  0000 C CNN
+F 4 "CM1213A-01SO" H 3950 2150 60  0001 C CNN "manf#"
+	1    4100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D10
+U 1 1 56EFD175
+P 5550 1500
+F 0 "D10" H 5300 2050 60  0000 C CNN
+F 1 "CM1213A-D" H 5000 1050 60  0000 C CNN
+F 2 "" H 5550 1500 60  0001 C CNN
+F 3 "" H 5550 1500 60  0000 C CNN
+F 4 "CM1213A-01SO" H 5400 2150 60  0001 C CNN "manf#"
+	1    5550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D13
+U 1 1 56EFD1DB
+P 7100 1500
+F 0 "D13" H 6850 2050 60  0000 C CNN
+F 1 "CM1213A-D" H 6550 1050 60  0000 C CNN
+F 2 "" H 7100 1500 60  0001 C CNN
+F 3 "" H 7100 1500 60  0000 C CNN
+F 4 "CM1213A-01SO" H 6950 2150 60  0001 C CNN "manf#"
+	1    7100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D15
+U 1 1 56EFD228
+P 8700 1500
+F 0 "D15" H 8450 2050 60  0000 C CNN
+F 1 "CM1213A-D" H 8150 1050 60  0000 C CNN
+F 2 "" H 8700 1500 60  0001 C CNN
+F 3 "" H 8700 1500 60  0000 C CNN
+F 4 "CM1213A-01SO" H 8550 2150 60  0001 C CNN "manf#"
+	1    8700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D7
+U 1 1 56EFD288
+P 4050 3250
+F 0 "D7" H 3800 3800 60  0000 C CNN
+F 1 "CM1213A-D" H 3500 2800 60  0000 C CNN
+F 2 "" H 4050 3250 60  0001 C CNN
+F 3 "" H 4050 3250 60  0000 C CNN
+F 4 "CM1213A-01SO" H 3900 3900 60  0001 C CNN "manf#"
+	1    4050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D11
+U 1 1 56EFD2DF
+P 5550 3250
+F 0 "D11" H 5300 3800 60  0000 C CNN
+F 1 "CM1213A-D" H 5000 2800 60  0000 C CNN
+F 2 "" H 5550 3250 60  0001 C CNN
+F 3 "" H 5550 3250 60  0000 C CNN
+F 4 "CM1213A-01SO" H 5400 3900 60  0001 C CNN "manf#"
+	1    5550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D14
+U 1 1 56EFD33B
+P 7100 3250
+F 0 "D14" H 6850 3800 60  0000 C CNN
+F 1 "CM1213A-D" H 6550 2800 60  0000 C CNN
+F 2 "" H 7100 3250 60  0001 C CNN
+F 3 "" H 7100 3250 60  0000 C CNN
+F 4 "CM1213A-01SO" H 6950 3900 60  0001 C CNN "manf#"
+	1    7100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D16
+U 1 1 56EFD39E
+P 8700 3250
+F 0 "D16" H 8450 3800 60  0000 C CNN
+F 1 "CM1213A-D" H 8150 2800 60  0000 C CNN
+F 2 "" H 8700 3250 60  0001 C CNN
+F 3 "" H 8700 3250 60  0000 C CNN
+F 4 "CM1213A-01SO" H 8550 3900 60  0001 C CNN "manf#"
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D8
+U 1 1 56EFD400
+P 4050 5000
+F 0 "D8" H 3800 5550 60  0000 C CNN
+F 1 "CM1213A-D" H 3500 4550 60  0000 C CNN
+F 2 "" H 4050 5000 60  0001 C CNN
+F 3 "" H 4050 5000 60  0000 C CNN
+F 4 "CM1213A-01SO" H 3900 5650 60  0001 C CNN "manf#"
+	1    4050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM1213A-D D12
+U 1 1 56EFD465
+P 5550 5000
+F 0 "D12" H 5300 5550 60  0000 C CNN
+F 1 "CM1213A-D" H 5000 4550 60  0000 C CNN
+F 2 "" H 5550 5000 60  0001 C CNN
+F 3 "" H 5550 5000 60  0000 C CNN
+F 4 "CM1213A-01SO" H 5400 5650 60  0001 C CNN "manf#"
+	1    5550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 800  9000 800 
+Wire Wire Line
+	4400 800  4400 850 
+Wire Wire Line
+	5850 800  5850 850 
+Connection ~ 4400 800 
+Wire Wire Line
+	7400 800  7400 850 
+Connection ~ 5850 800 
+Wire Wire Line
+	9000 800  9000 850 
+Connection ~ 7400 800 
+Wire Wire Line
+	2350 2150 9000 2150
+Wire Wire Line
+	4400 2150 4400 2050
+Wire Wire Line
+	5850 2150 5850 2050
+Connection ~ 4400 2150
+Wire Wire Line
+	7400 2150 7400 2050
+Connection ~ 5850 2150
+Wire Wire Line
+	9000 2150 9000 2050
+Connection ~ 7400 2150
+Wire Wire Line
+	4650 800  4650 4350
+Wire Wire Line
+	4350 2600 9000 2600
+Connection ~ 4650 800 
+Connection ~ 4650 2600
+Connection ~ 5850 2600
+Connection ~ 7400 2600
+Wire Wire Line
+	4350 3800 4350 3950
+Wire Wire Line
+	4350 3950 9000 3950
+Wire Wire Line
+	9000 3950 9000 3800
+Wire Wire Line
+	5850 3950 5850 3800
+Connection ~ 5850 3950
+Wire Wire Line
+	7400 3950 7400 3800
+Connection ~ 7400 3950
+Wire Wire Line
+	4800 2150 4800 5700
+Connection ~ 4800 3950
+Connection ~ 4800 2150
+Wire Wire Line
+	4350 4350 5850 4350
+Connection ~ 4650 4350
+Wire Wire Line
+	4350 5700 5850 5700
+Wire Wire Line
+	4350 5700 4350 5550
+Wire Wire Line
+	5850 5700 5850 5550
+Connection ~ 4800 5700
+Wire Wire Line
+	2300 2450 3950 2450
+Wire Wire Line
+	3950 2450 3950 2050
+Wire Wire Line
+	2300 2600 2600 2600
+Wire Wire Line
+	2600 2600 2600 2500
+Wire Wire Line
+	2600 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 2200
+Wire Wire Line
+	4000 2200 5400 2200
+Wire Wire Line
+	5400 2200 5400 2050
+Wire Wire Line
+	2300 2750 2650 2750
+Wire Wire Line
+	2650 2750 2650 2550
+Wire Wire Line
+	2650 2550 4050 2550
+Wire Wire Line
+	4050 2550 4050 2250
+Wire Wire Line
+	4050 2250 6950 2250
+Wire Wire Line
+	6950 2250 6950 2050
+Wire Wire Line
+	2300 2900 2700 2900
+Wire Wire Line
+	2700 2900 2700 2600
+Wire Wire Line
+	2700 2600 4100 2600
+Wire Wire Line
+	4100 2600 4100 2300
+Wire Wire Line
+	4100 2300 8550 2300
+Wire Wire Line
+	8550 2300 8550 2050
+Wire Wire Line
+	2450 3800 3900 3800
+Wire Wire Line
+	2450 3900 5400 3900
+Wire Wire Line
+	5400 3900 5400 3800
+Wire Wire Line
+	2450 4000 6950 4000
+Wire Wire Line
+	6950 4000 6950 3800
+Wire Wire Line
+	2450 4100 8550 4100
+Wire Wire Line
+	8550 4100 8550 3800
+Wire Wire Line
+	2500 5850 3900 5850
+Wire Wire Line
+	3900 5850 3900 5550
+Wire Wire Line
+	2500 6050 5400 6050
+Wire Wire Line
+	5400 6050 5400 5550
+$EndSCHEMATC

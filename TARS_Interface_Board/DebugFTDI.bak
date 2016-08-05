@@ -1,0 +1,294 @@
+EESchema Schematic File Version 2
+LIBS:RPi_IFaceBoard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:PowerManagement
+LIBS:ir_drivers
+LIBS:mechanical
+LIBS:diodes
+LIBS:RPi_IFaceBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 3 4
+Title "TARS Robotics Interface Board"
+Date ""
+Rev "0.1"
+Comp "TARS Robotics"
+Comment1 "EE00001A"
+Comment2 "EE00001B"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+Text HLabel 6850 3900 2    60   Input ~ 0
+RX
+Text HLabel 6850 3800 2    60   Output ~ 0
+TX
+Text HLabel 2200 2650 0    60   Input ~ 0
+VUSB
+Text HLabel 4700 4100 0    60   Input ~ 0
+USBD+
+Text HLabel 4700 4200 0    60   Input ~ 0
+USBD-
+$Comp
+L FT232RL U5
+U 1 1 56DF5CEC
+P 5800 4500
+F 0 "U5" H 5150 5400 50  0000 L CNN
+F 1 "FT232RL" H 6200 5400 50  0000 L CNN
+F 2 "Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm" H 5800 4500 50  0001 C CNN
+F 3 "" H 5800 4500 50  0000 C CNN
+F 4 "FT232RL-REEL" H 5800 4500 60  0001 C CNN "manf#"
+	1    5800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5500 6000 5500
+Connection ~ 5800 5500
+Connection ~ 5900 5500
+$Comp
+L Earth #PWR049
+U 1 1 56DF5D7B
+P 5800 5700
+F 0 "#PWR049" H 5800 5450 50  0001 C CNN
+F 1 "Earth" H 5800 5550 50  0001 C CNN
+F 2 "" H 5800 5700 50  0000 C CNN
+F 3 "" H 5800 5700 50  0000 C CNN
+	1    5800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5700 5800 5500
+Wire Wire Line
+	4700 4200 5000 4200
+Wire Wire Line
+	4700 4100 5000 4100
+Wire Wire Line
+	6600 3900 6850 3900
+Wire Wire Line
+	6600 3800 6850 3800
+NoConn ~ 5000 4900
+NoConn ~ 5000 4700
+$Comp
+L R R12
+U 1 1 56DF5FDD
+P 4300 4500
+F 0 "R12" V 4400 4500 50  0000 C CNN
+F 1 "10K" V 4200 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 4500 50  0001 C CNN
+F 3 "" H 4300 4500 50  0000 C CNN
+F 4 "RC0603FR-0710KL" V 4300 4500 60  0001 C CNN "manf#"
+	1    4300 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4500 5000 4500
+$Comp
+L C C16
+U 1 1 56DF6261
+P 3350 3950
+F 0 "C16" H 3375 4050 50  0000 L CNN
+F 1 "0.1 uF" H 3375 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3388 3800 50  0001 C CNN
+F 3 "" H 3350 3950 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 3350 3950 60  0001 C CNN "manf#"
+	1    3350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3800 5000 3800
+$Comp
+L Earth #PWR050
+U 1 1 56DF6293
+P 3350 4200
+F 0 "#PWR050" H 3350 3950 50  0001 C CNN
+F 1 "Earth" H 3350 4050 50  0001 C CNN
+F 2 "" H 3350 4200 50  0000 C CNN
+F 3 "" H 3350 4200 50  0000 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4200 3350 4100
+$Comp
+L INDUCTOR L3
+U 1 1 56DF6495
+P 2850 2650
+F 0 "L3" V 2800 2650 50  0000 C CNN
+F 1 "40 Ohm FB" V 2950 2650 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2850 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0000 C CNN
+F 4 "MI0805K400R-10" V 2850 2650 60  0001 C CNN "manf#"
+	1    2850 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2650 2550 2650
+$Comp
+L C C15
+U 1 1 56DF6536
+P 2300 2900
+F 0 "C15" H 2325 3000 50  0000 L CNN
+F 1 "10 nF" H 2325 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2338 2750 50  0001 C CNN
+F 3 "" H 2300 2900 50  0000 C CNN
+F 4 "C1005X7R1H103K050BE" H 2300 2900 60  0001 C CNN "manf#"
+	1    2300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR051
+U 1 1 56DF657C
+P 2300 3150
+F 0 "#PWR051" H 2300 2900 50  0001 C CNN
+F 1 "Earth" H 2300 3000 50  0001 C CNN
+F 2 "" H 2300 3150 50  0000 C CNN
+F 3 "" H 2300 3150 50  0000 C CNN
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3150 2300 3050
+Wire Wire Line
+	2300 2750 2300 2650
+Connection ~ 2300 2650
+Text Label 3350 2650 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	3150 2650 3350 2650
+Text Label 3550 4500 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	3550 4500 4150 4500
+Wire Notes Line
+	1850 2500 3800 2500
+Wire Notes Line
+	3800 2500 3800 3300
+Wire Notes Line
+	3800 3300 1850 3300
+Wire Notes Line
+	1850 3300 1850 2500
+Text Notes 1850 2450 0    60   ~ 12
+USB VCC Input Filter
+NoConn ~ 6600 5200
+NoConn ~ 6600 5100
+NoConn ~ 6600 5000
+NoConn ~ 6600 4900
+NoConn ~ 6600 4800
+NoConn ~ 6600 4500
+NoConn ~ 6600 4400
+NoConn ~ 6600 4300
+NoConn ~ 6600 4200
+NoConn ~ 6600 4100
+NoConn ~ 6600 4000
+Wire Wire Line
+	5700 3500 5900 3500
+Text Label 5800 3300 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	5800 3500 5800 3300
+Connection ~ 5800 3500
+NoConn ~ 5000 5200
+$Comp
+L C C17
+U 1 1 56DF763C
+P 7550 2950
+F 0 "C17" H 7575 3050 50  0000 L CNN
+F 1 "0.1 uF" H 7575 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7588 2800 50  0001 C CNN
+F 3 "" H 7550 2950 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 7550 2950 60  0001 C CNN "manf#"
+	1    7550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 56DF7667
+P 8050 2950
+F 0 "C18" H 8075 3050 50  0000 L CNN
+F 1 "0.1 uF" H 8075 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8088 2800 50  0001 C CNN
+F 3 "" H 8050 2950 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 8050 2950 60  0001 C CNN "manf#"
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3100 8050 3100
+Wire Wire Line
+	7550 2800 8050 2800
+$Comp
+L Earth #PWR052
+U 1 1 56DF76E2
+P 7800 3250
+F 0 "#PWR052" H 7800 3000 50  0001 C CNN
+F 1 "Earth" H 7800 3100 50  0001 C CNN
+F 2 "" H 7800 3250 50  0000 C CNN
+F 3 "" H 7800 3250 50  0000 C CNN
+	1    7800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3250 7800 3100
+Connection ~ 7800 3100
+Text Label 7800 2650 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	7800 2800 7800 2650
+Connection ~ 7800 2800
+Wire Notes Line
+	7400 2550 8300 2550
+Wire Notes Line
+	8300 2550 8300 3350
+Wire Notes Line
+	8300 3350 7400 3350
+Wire Notes Line
+	7400 3350 7400 2550
+Text Notes 7350 2500 0    60   ~ 12
+Decoupling capacitors:
+Text Notes 7300 3450 0    60   ~ 12
+Layout Note: Place very close to FT232RL IC!!
+$Comp
+L PWR_FLAG #FLG053
+U 1 1 56DFF8FE
+P 3300 2800
+F 0 "#FLG053" H 3300 2895 50  0001 C CNN
+F 1 "PWR_FLAG" H 3300 2980 50  0000 C CNN
+F 2 "" H 3300 2800 50  0000 C CNN
+F 3 "" H 3300 2800 50  0000 C CNN
+	1    3300 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2800 3300 2650
+Connection ~ 3300 2650
+$EndSCHEMATC

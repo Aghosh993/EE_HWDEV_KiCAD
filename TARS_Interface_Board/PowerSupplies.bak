@@ -1,0 +1,938 @@
+EESchema Schematic File Version 2
+LIBS:RPi_IFaceBoard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:PowerManagement
+LIBS:ir_drivers
+LIBS:mechanical
+LIBS:diodes
+LIBS:RPi_IFaceBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "TARS Robotics Interface Board"
+Date ""
+Rev "0.1"
+Comp "TARS Robotics"
+Comment1 "EE00001A"
+Comment2 "EE00001B"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+$Comp
+L LM22679 U1
+U 1 1 56DDD999
+P 3300 2900
+F 0 "U1" H 3050 3150 60  0000 C CNN
+F 1 "LM22679" H 3200 2500 60  0000 C CNN
+F 2 "PowerPackages:TI_TO-263" H 3300 2900 60  0001 C CNN
+F 3 "" H 3300 2900 60  0000 C CNN
+F 4 "LM22679TJ-5.0/NOPBCT-ND" H 3300 2900 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/texas-instruments/LM22679TJ-5.0%2FNOPB/LM22679TJ-5.0%2FNOPBCT-ND/3526838" H 3300 2900 60  0001 C CNN "Digikey Link"
+F 6 "LM22679TJ-5.0/NOPB" H 3300 2900 60  0001 C CNN "manf#"
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 56DDD9EB
+P 1850 3050
+F 0 "C1" H 1875 3150 50  0000 L CNN
+F 1 "10 uF" H 1875 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1888 2900 50  0001 C CNN
+F 3 "" H 1850 3050 50  0000 C CNN
+F 4 "490-5314-1-ND" H 1850 3050 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER7YA106KA12L/490-5314-1-ND/2039093" H 1850 3050 60  0001 C CNN "Digikey Link"
+F 6 "GRM32ER7YA106KA12L" H 1850 3050 60  0001 C CNN "manf#"
+	1    1850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 56DDDA76
+P 2350 3050
+F 0 "C6" H 2375 3150 50  0000 L CNN
+F 1 "1.0 uF" H 2375 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2388 2900 50  0001 C CNN
+F 3 "" H 2350 3050 50  0000 C CNN
+F 4 "490-3897-1-ND" H 2350 3050 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM188R61E105KA12D/490-3897-1-ND/965939" H 2350 3050 60  0001 C CNN "Digikey Link"
+F 6 "GRM188R61E105KA12D" H 2350 3050 60  0001 C CNN "manf#"
+	1    2350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 56DDDA91
+P 5650 3000
+F 0 "C10" H 5675 3100 50  0000 L CNN
+F 1 "0.27 uF" H 5675 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5688 2850 50  0001 C CNN
+F 3 "" H 5650 3000 50  0000 C CNN
+F 4 "478-1390-1-ND" H 5650 3000 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/avx-corporation/08055C393KAT2A/478-1390-1-ND/564422" H 5650 3000 60  0001 C CNN "Digikey Link"
+F 6 "GRM219R71E274KA01D" H 5650 3000 60  0001 C CNN "manf#"
+	1    5650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 56DDDAB2
+P 2300 3650
+F 0 "C4" H 2325 3750 50  0000 L CNN
+F 1 "10 nF" H 2325 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2338 3500 50  0001 C CNN
+F 3 "" H 2300 3650 50  0000 C CNN
+F 4 "399-1158-1-ND" H 2300 3650 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C103K5RACTU/399-1158-1-ND/411433" H 2300 3650 60  0001 C CNN "Digikey Link"
+F 6 "C0805C103K5RACTU" H 2300 3650 60  0001 C CNN "manf#"
+	1    2300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C8
+U 1 1 56DDDAD1
+P 4000 3600
+F 0 "C8" H 4025 3700 50  0000 L CNN
+F 1 "120 uF" H 4025 3500 50  0000 L CNN
+F 2 "capacitors:Radial_SMD_8mm" H 4038 3450 50  0001 C CNN
+F 3 "" H 4000 3600 50  0000 C CNN
+F 4 "565-3200-1-ND" H 4000 3600 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/united-chemi-con/APXE100ARA121MF61G/565-3200-1-ND/1826740" H 4000 3600 60  0001 C CNN "Digikey Link"
+F 6 "APXE100ARA121MF61G" H 4000 3600 60  0001 C CNN "manf#"
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 56DDDAF2
+P 950 3000
+F 0 "D1" H 950 3100 50  0000 C CNN
+F 1 "Vrrm=40.0V,Vf=510.0 mV" H 950 2900 50  0000 C CNN
+F 2 "PowerPackages:DPAK_TO252AA_CUSTOM" H 950 3000 50  0001 C CNN
+F 3 "" H 950 3000 50  0000 C CNN
+F 4 "VS-50WQ04FNPBF-ND" H 950 3000 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-search/en?keywords=50WQ04FNPBF" H 950 3000 60  0001 C CNN "Digikey Link"
+F 6 "VS-50WQ04FNPBF" H 950 3000 60  0001 C CNN "manf#"
+	1    950  3000
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 56DDDBC6
+P 4450 2950
+F 0 "L1" V 4400 2950 50  0000 C CNN
+F 1 "6.5 uH, 18 mOhm" V 4550 2950 50  0000 C CNN
+F 2 "PowerPackages:SRR1208" H 4450 2950 50  0001 C CNN
+F 3 "" H 4450 2950 50  0000 C CNN
+F 4 "SRR1208-6R5MLCT-ND" V 4450 2950 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/bourns-inc/SRR1208-6R5ML/SRR1208-6R5MLCT-ND/2353029" V 4450 2950 60  0001 C CNN "DigikeyLink"
+F 6 "SRR1208-6R5ML" V 4450 2950 60  0001 C CNN "manf#"
+	1    4450 2950
+	0    1    1    0   
+$EndComp
+Text HLabel 1650 2900 0    60   Input ~ 0
+VBAT
+$Comp
+L Earth #PWR029
+U 1 1 56DDDD31
+P 2150 3300
+F 0 "#PWR029" H 2150 3050 50  0001 C CNN
+F 1 "Earth" H 2150 3150 50  0001 C CNN
+F 2 "" H 2150 3300 50  0000 C CNN
+F 3 "" H 2150 3300 50  0000 C CNN
+	1    2150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR030
+U 1 1 56DDDF3A
+P 5650 3250
+F 0 "#PWR030" H 5650 3000 50  0001 C CNN
+F 1 "Earth" H 5650 3100 50  0001 C CNN
+F 2 "" H 5650 3250 50  0000 C CNN
+F 3 "" H 5650 3250 50  0000 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR031
+U 1 1 56DDDF82
+P 2800 3500
+F 0 "#PWR031" H 2800 3250 50  0001 C CNN
+F 1 "Earth" H 2800 3350 50  0001 C CNN
+F 2 "" H 2800 3500 50  0000 C CNN
+F 3 "" H 2800 3500 50  0000 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 3050
+Text Label 1800 3800 0    60   ~ 0
+SW_OUT
+Text Label 1750 2650 0    60   ~ 0
+SW_OUT
+$Comp
+L Earth #PWR032
+U 1 1 56DDE452
+P 950 3350
+F 0 "#PWR032" H 950 3100 50  0001 C CNN
+F 1 "Earth" H 950 3200 50  0001 C CNN
+F 2 "" H 950 3350 50  0000 C CNN
+F 3 "" H 950 3350 50  0000 C CNN
+	1    950  3350
+	1    0    0    -1  
+$EndComp
+Text Label 4950 2950 0    60   ~ 0
+SW_OUT
+$Comp
+L Earth #PWR033
+U 1 1 56DDE67A
+P 4100 2500
+F 0 "#PWR033" H 4100 2250 50  0001 C CNN
+F 1 "Earth" H 4100 2350 50  0001 C CNN
+F 2 "" H 4100 2500 50  0000 C CNN
+F 3 "" H 4100 2500 50  0000 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR034
+U 1 1 56DDE76C
+P 4000 3850
+F 0 "#PWR034" H 4000 3600 50  0001 C CNN
+F 1 "Earth" H 4000 3700 50  0001 C CNN
+F 2 "" H 4000 3850 50  0000 C CNN
+F 3 "" H 4000 3850 50  0000 C CNN
+	1    4000 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 600  2150 0    60   ~ 0
+5V, 5A Switching Power Supply for STM32+Pi:
+Wire Wire Line
+	1650 2900 2800 2900
+Connection ~ 1850 2900
+Connection ~ 2350 2900
+Wire Wire Line
+	1850 3200 2350 3200
+Wire Wire Line
+	2150 3300 2150 3200
+Connection ~ 2150 3200
+Wire Wire Line
+	3900 2850 5650 2850
+Wire Wire Line
+	5650 3250 5650 3150
+Wire Wire Line
+	2800 3500 2800 3100
+Wire Wire Line
+	2300 3500 2650 3500
+Wire Wire Line
+	2650 3500 2650 3000
+Wire Wire Line
+	2650 3000 2800 3000
+Wire Wire Line
+	1800 3800 2300 3800
+Wire Wire Line
+	950  3350 950  3200
+Wire Wire Line
+	3900 2950 4150 2950
+Wire Wire Line
+	4750 2950 4950 2950
+Wire Wire Line
+	4000 2950 4000 3450
+Wire Wire Line
+	3650 3450 4550 3450
+Connection ~ 4000 2950
+Wire Wire Line
+	3400 2500 4100 2500
+Wire Wire Line
+	4000 3850 4000 3750
+Wire Wire Line
+	950  2800 2800 2800
+Wire Wire Line
+	1750 2800 1750 2650
+Connection ~ 1750 2800
+Wire Notes Line
+	600  2200 6000 2200
+Wire Notes Line
+	6000 2200 6000 4100
+Wire Notes Line
+	6000 4100 600  4100
+Wire Notes Line
+	600  4100 600  2200
+Text Notes 550  4300 0    60   ~ 0
+2nd 5V, 5A Switching Power Supply for servos:
+Text Notes 600  600  0    60   ~ 0
+Servo power bus feedback divider:
+Text HLabel 1350 850  0    60   Output ~ 0
+SRV_5V_OUT
+Text HLabel 2450 1350 2    60   Output ~ 0
+SERVO_PWR_FB
+$Comp
+L R R6
+U 1 1 56EE8218
+P 1600 1100
+F 0 "R6" V 1700 1100 50  0000 C CNN
+F 1 "2.2K" V 1500 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 1100 50  0001 C CNN
+F 3 "" H 1600 1100 50  0000 C CNN
+F 4 "RC0603FR-072K2L" V 1600 1100 60  0001 C CNN "manf#"
+	1    1600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 56EE8271
+P 1600 1600
+F 0 "R7" V 1700 1600 50  0000 C CNN
+F 1 "1.1K" V 1500 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 1600 50  0001 C CNN
+F 3 "" H 1600 1600 50  0000 C CNN
+F 4 "RC0603FR-071K1L" V 1600 1600 60  0001 C CNN "manf#"
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 850  1600 850 
+Wire Wire Line
+	1600 850  1600 950 
+Wire Wire Line
+	1600 1250 1600 1450
+$Comp
+L Earth #PWR035
+U 1 1 56EE854A
+P 1600 1800
+F 0 "#PWR035" H 1600 1550 50  0001 C CNN
+F 1 "Earth" H 1600 1650 50  0001 C CNN
+F 2 "" H 1600 1800 50  0000 C CNN
+F 3 "" H 1600 1800 50  0000 C CNN
+	1    1600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1800 1600 1750
+Connection ~ 1600 1350
+Wire Notes Line
+	600  650  5150 650 
+Wire Notes Line
+	600  1950 5150 1950
+Wire Notes Line
+	600  1950 600  650 
+Connection ~ 2000 1350
+$Comp
+L C C3
+U 1 1 56EEBCDE
+P 2000 1550
+F 0 "C3" H 2025 1650 50  0000 L CNN
+F 1 "10 uF" H 2025 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 2038 1400 50  0001 C CNN
+F 3 "" H 2000 1550 50  0000 C CNN
+F 4 "490-5314-1-ND" H 2000 1550 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER7YA106KA12L/490-5314-1-ND/2039093" H 2000 1550 60  0001 C CNN "Digikey Link"
+F 6 "GRM32ER7YA106KA12L" H 2000 1550 60  0001 C CNN "manf#"
+	1    2000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1750 2000 1700
+$Comp
+L TEST_1P W1
+U 1 1 56EED573
+P 2350 1350
+F 0 "W1" H 2350 1620 50  0000 C CNN
+F 1 "TEST_1P" H 2350 1550 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 2550 1350 50  0001 C CNN
+F 3 "" H 2550 1350 50  0000 C CNN
+	1    2350 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 1400 0    60   ~ 0
+Nominal ADC voltage = 1.67 V, with\n1.52 mA flowing through resistor \nbridge. 1%, 1/10 Watt resistor or \nnearest above 0.0026 Watts is fine \non either resistor.\n\nCutoff frequency of 1st-order LPF \nis around 160 Hz
+Wire Notes Line
+	5150 1950 5150 650 
+Text HLabel 6200 800  0    60   Input ~ 0
+VBAT
+Text HLabel 7700 1300 2    60   Input ~ 0
+VBAT_FB
+$Comp
+L C C12
+U 1 1 56EEFA65
+P 7300 1450
+F 0 "C12" H 7325 1550 50  0000 L CNN
+F 1 "10 uF" H 7325 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 7338 1300 50  0001 C CNN
+F 3 "" H 7300 1450 50  0000 C CNN
+F 4 "490-5314-1-ND" H 7300 1450 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER7YA106KA12L/490-5314-1-ND/2039093" H 7300 1450 60  0001 C CNN "Digikey Link"
+F 6 "GRM32ER7YA106KA12L" H 7300 1450 60  0001 C CNN "manf#"
+	1    7300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 56EEFB4B
+P 6400 1500
+F 0 "R10" V 6500 1500 50  0000 C CNN
+F 1 "1.1K" V 6300 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6330 1500 50  0001 C CNN
+F 3 "" H 6400 1500 50  0000 C CNN
+F 4 "RC0603FR-071K1L" V 6400 1500 60  0001 C CNN "manf#"
+	1    6400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56EEFC35
+P 6400 1050
+F 0 "R9" V 6500 1050 50  0000 C CNN
+F 1 "6.65K" V 6300 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6330 1050 50  0001 C CNN
+F 3 "" H 6400 1050 50  0000 C CNN
+F 4 "RC0603FR-076K65L" V 6400 1050 60  0001 C CNN "manf#"
+	1    6400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 800  6400 800 
+Wire Wire Line
+	6400 800  6400 900 
+Wire Wire Line
+	6400 1200 6400 1350
+Wire Wire Line
+	7300 1600 7300 1750
+Connection ~ 7300 1650
+$Comp
+L Earth #PWR036
+U 1 1 56EF0A63
+P 7300 1750
+F 0 "#PWR036" H 7300 1500 50  0001 C CNN
+F 1 "Earth" H 7300 1600 50  0001 C CNN
+F 2 "" H 7300 1750 50  0000 C CNN
+F 3 "" H 7300 1750 50  0000 C CNN
+	1    7300 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 8400 1850 0    60   ~ 0
+Nominal ADC voltage=2.83V at Vbat=20V, \nwith 2.58 mA flowing through resistor \nbridge. At Vbat=14.8V, ADC voltage=2.10V. \nwith around 1.91 mA flowing through bridge.\n\n1%, 1/10 Watt resistor or \nnearest above 0.044 Watts is fine \non either resistor.\n\nCutoff frequency of 1st-order LPF \nis around 160 Hz
+Wire Notes Line
+	5850 650  10500 650 
+Wire Notes Line
+	10500 650  10500 2000
+Wire Notes Line
+	10500 2000 5850 2000
+Wire Notes Line
+	5850 2000 5850 650 
+Text Notes 5850 600  0    60   ~ 0
+Battery voltage sense divider:
+$Comp
+L R R11
+U 1 1 57207BBA
+P 6800 1300
+F 0 "R11" V 6900 1300 50  0000 C CNN
+F 1 "100" V 6700 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6730 1300 50  0001 C CNN
+F 3 "" H 6800 1300 50  0000 C CNN
+F 4 "RC0603FR-07100RL" V 6800 1300 60  0001 C CNN "manf#"
+	1    6800 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 1300 6650 1300
+Connection ~ 6400 1300
+Wire Wire Line
+	6950 1300 7700 1300
+Connection ~ 7300 1300
+$Comp
+L R R8
+U 1 1 57208059
+P 1800 1350
+F 0 "R8" V 1900 1350 50  0000 C CNN
+F 1 "100" V 1700 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1730 1350 50  0001 C CNN
+F 3 "" H 1800 1350 50  0000 C CNN
+F 4 "RC0603FR-07100RL" V 1800 1350 60  0001 C CNN "manf#"
+	1    1800 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1350 1650 1350
+Wire Wire Line
+	1950 1350 2450 1350
+$Comp
+L LM22679 U2
+U 1 1 5720884F
+P 3300 4900
+F 0 "U2" H 3050 5150 60  0000 C CNN
+F 1 "LM22679" H 3200 4500 60  0000 C CNN
+F 2 "PowerPackages:TI_TO-263" H 3300 4900 60  0001 C CNN
+F 3 "" H 3300 4900 60  0000 C CNN
+F 4 "LM22679TJ-5.0/NOPBCT-ND" H 3300 4900 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/texas-instruments/LM22679TJ-5.0%2FNOPB/LM22679TJ-5.0%2FNOPBCT-ND/3526838" H 3300 4900 60  0001 C CNN "Digikey Link"
+F 6 "LM22679TJ-5.0/NOPB" H 3300 4900 60  0001 C CNN "manf#"
+	1    3300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 57208858
+P 1850 5050
+F 0 "C2" H 1875 5150 50  0000 L CNN
+F 1 "10 uF" H 1875 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1888 4900 50  0001 C CNN
+F 3 "" H 1850 5050 50  0000 C CNN
+F 4 "490-5314-1-ND" H 1850 5050 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER7YA106KA12L/490-5314-1-ND/2039093" H 1850 5050 60  0001 C CNN "Digikey Link"
+F 6 "GRM32ER7YA106KA12L" H 1850 5050 60  0001 C CNN "manf#"
+	1    1850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 57208861
+P 2350 5050
+F 0 "C7" H 2375 5150 50  0000 L CNN
+F 1 "1.0 uF" H 2375 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2388 4900 50  0001 C CNN
+F 3 "" H 2350 5050 50  0000 C CNN
+F 4 "490-3897-1-ND" H 2350 5050 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM188R61E105KA12D/490-3897-1-ND/965939" H 2350 5050 60  0001 C CNN "Digikey Link"
+F 6 "GRM188R61E105KA12D" H 2350 5050 60  0001 C CNN "manf#"
+	1    2350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5720886A
+P 5650 5000
+F 0 "C11" H 5675 5100 50  0000 L CNN
+F 1 "0.27 uF" H 5675 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5688 4850 50  0001 C CNN
+F 3 "" H 5650 5000 50  0000 C CNN
+F 4 "478-1390-1-ND" H 5650 5000 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/avx-corporation/08055C393KAT2A/478-1390-1-ND/564422" H 5650 5000 60  0001 C CNN "Digikey Link"
+F 6 "GRM219R71E274KA01D" H 5650 5000 60  0001 C CNN "manf#"
+	1    5650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 57208873
+P 2300 5650
+F 0 "C5" H 2325 5750 50  0000 L CNN
+F 1 "10 nF" H 2325 5550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2338 5500 50  0001 C CNN
+F 3 "" H 2300 5650 50  0000 C CNN
+F 4 "399-1158-1-ND" H 2300 5650 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C103K5RACTU/399-1158-1-ND/411433" H 2300 5650 60  0001 C CNN "Digikey Link"
+F 6 "C0805C103K5RACTU" H 2300 5650 60  0001 C CNN "manf#"
+	1    2300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C9
+U 1 1 5720887C
+P 4000 5600
+F 0 "C9" H 4025 5700 50  0000 L CNN
+F 1 "120 uF" H 4025 5500 50  0000 L CNN
+F 2 "capacitors:Radial_SMD_8mm" H 4038 5450 50  0001 C CNN
+F 3 "" H 4000 5600 50  0000 C CNN
+F 4 "565-3200-1-ND" H 4000 5600 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/united-chemi-con/APXE100ARA121MF61G/565-3200-1-ND/1826740" H 4000 5600 60  0001 C CNN "Digikey Link"
+F 6 "APXE100ARA121MF61G" H 4000 5600 60  0001 C CNN "manf#"
+	1    4000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D2
+U 1 1 57208885
+P 950 5000
+F 0 "D2" H 950 5100 50  0000 C CNN
+F 1 "Vrrm=40.0V,Vf=510.0 mV" H 950 4900 50  0000 C CNN
+F 2 "PowerPackages:DPAK_TO252AA_CUSTOM" H 950 5000 50  0001 C CNN
+F 3 "" H 950 5000 50  0000 C CNN
+F 4 "VS-50WQ04FNPBF-ND" H 950 5000 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-search/en?keywords=50WQ04FNPBF" H 950 5000 60  0001 C CNN "Digikey Link"
+F 6 "VS-50WQ04FNPBF" H 950 5000 60  0001 C CNN "manf#"
+	1    950  5000
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 5720888E
+P 4450 4950
+F 0 "L2" V 4400 4950 50  0000 C CNN
+F 1 "6.5 uH, 18 mOhm" V 4550 4950 50  0000 C CNN
+F 2 "PowerPackages:SRR1208" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0000 C CNN
+F 4 "SRR1208-6R5MLCT-ND" V 4450 4950 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/bourns-inc/SRR1208-6R5ML/SRR1208-6R5MLCT-ND/2353029" V 4450 4950 60  0001 C CNN "DigikeyLink"
+F 6 "SRR1208-6R5ML" V 4450 4950 60  0001 C CNN "manf#"
+	1    4450 4950
+	0    1    1    0   
+$EndComp
+Text HLabel 1650 4900 0    60   Input ~ 0
+VBAT
+$Comp
+L Earth #PWR037
+U 1 1 57208895
+P 2150 5300
+F 0 "#PWR037" H 2150 5050 50  0001 C CNN
+F 1 "Earth" H 2150 5150 50  0001 C CNN
+F 2 "" H 2150 5300 50  0000 C CNN
+F 3 "" H 2150 5300 50  0000 C CNN
+	1    2150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR038
+U 1 1 5720889B
+P 5650 5250
+F 0 "#PWR038" H 5650 5000 50  0001 C CNN
+F 1 "Earth" H 5650 5100 50  0001 C CNN
+F 2 "" H 5650 5250 50  0000 C CNN
+F 3 "" H 5650 5250 50  0000 C CNN
+	1    5650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR039
+U 1 1 572088A1
+P 2800 5500
+F 0 "#PWR039" H 2800 5250 50  0001 C CNN
+F 1 "Earth" H 2800 5350 50  0001 C CNN
+F 2 "" H 2800 5500 50  0000 C CNN
+F 3 "" H 2800 5500 50  0000 C CNN
+	1    2800 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 5050
+Text Label 1800 5800 0    60   ~ 0
+SW_OUT2
+Text Label 1750 4650 0    60   ~ 0
+SW_OUT2
+$Comp
+L Earth #PWR040
+U 1 1 572088AA
+P 950 5350
+F 0 "#PWR040" H 950 5100 50  0001 C CNN
+F 1 "Earth" H 950 5200 50  0001 C CNN
+F 2 "" H 950 5350 50  0000 C CNN
+F 3 "" H 950 5350 50  0000 C CNN
+	1    950  5350
+	1    0    0    -1  
+$EndComp
+Text Label 4950 4950 0    60   ~ 0
+SW_OUT2
+$Comp
+L Earth #PWR041
+U 1 1 572088B1
+P 4100 4500
+F 0 "#PWR041" H 4100 4250 50  0001 C CNN
+F 1 "Earth" H 4100 4350 50  0001 C CNN
+F 2 "" H 4100 4500 50  0000 C CNN
+F 3 "" H 4100 4500 50  0000 C CNN
+	1    4100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR042
+U 1 1 572088B7
+P 4000 5850
+F 0 "#PWR042" H 4000 5600 50  0001 C CNN
+F 1 "Earth" H 4000 5700 50  0001 C CNN
+F 2 "" H 4000 5850 50  0000 C CNN
+F 3 "" H 4000 5850 50  0000 C CNN
+	1    4000 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4900 2800 4900
+Connection ~ 1850 4900
+Connection ~ 2350 4900
+Wire Wire Line
+	1850 5200 2350 5200
+Wire Wire Line
+	2150 5300 2150 5200
+Connection ~ 2150 5200
+Wire Wire Line
+	3900 4850 5650 4850
+Wire Wire Line
+	5650 5250 5650 5150
+Wire Wire Line
+	2800 5500 2800 5100
+Wire Wire Line
+	2300 5500 2650 5500
+Wire Wire Line
+	2650 5500 2650 5000
+Wire Wire Line
+	2650 5000 2800 5000
+Wire Wire Line
+	1800 5800 2300 5800
+Wire Wire Line
+	950  5350 950  5200
+Wire Wire Line
+	3900 4950 4150 4950
+Wire Wire Line
+	4750 4950 4950 4950
+Wire Wire Line
+	4000 4950 4000 5450
+Wire Wire Line
+	3650 5450 4550 5450
+Connection ~ 4000 4950
+Wire Wire Line
+	3400 4500 4100 4500
+Wire Wire Line
+	4000 5850 4000 5750
+Wire Wire Line
+	950  4800 2800 4800
+Wire Wire Line
+	1750 4800 1750 4650
+Connection ~ 1750 4800
+Wire Notes Line
+	600  4350 6000 4350
+Wire Notes Line
+	6000 4350 6000 6100
+Wire Notes Line
+	6000 6100 600  6100
+Wire Notes Line
+	600  6100 600  4350
+Text HLabel 6850 5050 0    60   Input ~ 0
+SERVO_PWR_EN
+Text Label 4550 5450 0    60   ~ 0
+SRV_5V_SW_UPSTREAM
+Text Label 9700 4200 2    60   ~ 0
+SRV_5V_SW_UPSTREAM
+$Comp
+L Earth #PWR043
+U 1 1 5722A040
+P 9100 5700
+F 0 "#PWR043" H 9100 5450 50  0001 C CNN
+F 1 "Earth" H 9100 5550 50  0001 C CNN
+F 2 "" H 9100 5700 50  0000 C CNN
+F 3 "" H 9100 5700 50  0000 C CNN
+	1    9100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5700 9100 5650
+$Comp
+L TPS1H100AQPWPRQ1 U3
+U 1 1 5722ABBD
+P 8300 5150
+F 0 "U3" H 7950 5600 60  0000 C CNN
+F 1 "TPS1H100AQPWPRQ1" H 8350 4700 60  0000 C CNN
+F 2 "PowerPackages:PowerPAD_14pin_EP" H 8300 5150 60  0001 C CNN
+F 3 "" H 8300 5150 60  0000 C CNN
+	1    8300 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8900 4850
+$Comp
+L Earth #PWR044
+U 1 1 5722ACF1
+P 9200 5050
+F 0 "#PWR044" H 9200 4800 50  0001 C CNN
+F 1 "Earth" H 9200 4900 50  0001 C CNN
+F 2 "" H 9200 5050 50  0000 C CNN
+F 3 "" H 9200 5050 50  0000 C CNN
+	1    9200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR045
+U 1 1 5722AD60
+P 9350 5050
+F 0 "#PWR045" H 9350 4800 50  0001 C CNN
+F 1 "Earth" H 9350 4900 50  0001 C CNN
+F 2 "" H 9350 5050 50  0000 C CNN
+F 3 "" H 9350 5050 50  0000 C CNN
+	1    9350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5050 9200 5050
+Wire Wire Line
+	8900 4950 9350 4950
+Wire Wire Line
+	9350 4950 9350 5050
+$Comp
+L Earth #PWR046
+U 1 1 5722AFC0
+P 7550 5700
+F 0 "#PWR046" H 7550 5450 50  0001 C CNN
+F 1 "Earth" H 7550 5550 50  0001 C CNN
+F 2 "" H 7550 5700 50  0000 C CNN
+F 3 "" H 7550 5700 50  0000 C CNN
+	1    7550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5700 7550 4950
+Wire Wire Line
+	7550 4950 7700 4950
+Wire Wire Line
+	8900 5250 8900 5450
+Connection ~ 8900 5350
+Wire Wire Line
+	9700 5350 8900 5350
+Wire Wire Line
+	9700 4200 9700 5350
+Connection ~ 9100 5350
+Text HLabel 6750 5350 0    60   Input ~ 0
+SRV_5V_OUT
+Wire Wire Line
+	7700 5250 7700 5450
+Connection ~ 7700 5350
+Wire Wire Line
+	6750 5350 7700 5350
+Text HLabel 4550 3450 2    60   Input ~ 0
+5V_OUT
+$Comp
+L PWR_FLAG #FLG047
+U 1 1 5723458C
+P 9950 5050
+F 0 "#FLG047" H 9950 5145 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 5230 50  0000 C CNN
+F 2 "" H 9950 5050 50  0000 C CNN
+F 3 "" H 9950 5050 50  0000 C CNN
+	1    9950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 5050 9950 5050
+Connection ~ 9700 5050
+$Comp
+L C C13
+U 1 1 5724385C
+P 9100 5500
+F 0 "C13" H 9125 5600 50  0000 L CNN
+F 1 "10 uF" H 9125 5400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 9138 5350 50  0001 C CNN
+F 3 "" H 9100 5500 50  0000 C CNN
+F 4 "490-5314-1-ND" H 9100 5500 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER7YA106KA12L/490-5314-1-ND/2039093" H 9100 5500 60  0001 C CNN "Digikey Link"
+F 6 "GRM32ER7YA106KA12L" H 9100 5500 60  0001 C CNN "manf#"
+	1    9100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1350 2000 1400
+Wire Wire Line
+	1600 1750 2000 1750
+Connection ~ 2350 1350
+Wire Wire Line
+	6400 1650 7300 1650
+$Comp
+L PWR_FLAG #FLG048
+U 1 1 57222463
+P 4350 3450
+F 0 "#FLG048" H 4350 3545 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 3630 50  0000 C CNN
+F 2 "" H 4350 3450 50  0000 C CNN
+F 3 "" H 4350 3450 50  0000 C CNN
+	1    4350 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 3450
+$Comp
+L C C14
+U 1 1 5728A507
+P 3650 3600
+F 0 "C14" H 3675 3700 50  0000 L CNN
+F 1 "1.0 uF" H 3675 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3688 3450 50  0001 C CNN
+F 3 "" H 3650 3600 50  0000 C CNN
+F 4 "490-3897-1-ND" H 3650 3600 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM188R61E105KA12D/490-3897-1-ND/965939" H 3650 3600 60  0001 C CNN "Digikey Link"
+F 6 "GRM188R61E105KA12D" H 3650 3600 60  0001 C CNN "manf#"
+	1    3650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 5728A6B1
+P 3650 5600
+F 0 "C23" H 3675 5700 50  0000 L CNN
+F 1 "1.0 uF" H 3675 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3688 5450 50  0001 C CNN
+F 3 "" H 3650 5600 50  0000 C CNN
+F 4 "490-3897-1-ND" H 3650 5600 60  0001 C CNN "Digikey PN"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM188R61E105KA12D/490-3897-1-ND/965939" H 3650 5600 60  0001 C CNN "Digikey Link"
+F 6 "GRM188R61E105KA12D" H 3650 5600 60  0001 C CNN "manf#"
+	1    3650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5750 3650 5750
+Connection ~ 4000 5450
+Connection ~ 4000 5750
+Wire Wire Line
+	4000 3750 3650 3750
+Connection ~ 4000 3750
+Connection ~ 4000 3450
+$Comp
+L R R4
+U 1 1 5728B57C
+P 7200 5050
+F 0 "R4" V 7280 5050 50  0000 C CNN
+F 1 "3.3K" V 7200 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7130 5050 50  0001 C CNN
+F 3 "" H 7200 5050 50  0000 C CNN
+F 4 "ERJ-2RKF3301X" V 7200 5050 60  0001 C CNN "manf#"
+	1    7200 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 5050 7050 5050
+Wire Wire Line
+	7350 5050 7700 5050
+$Comp
+L SCHDPAK D3
+U 1 1 5728BD20
+P 7000 4550
+F 0 "D3" H 7000 4650 50  0000 C CNN
+F 1 "SCHDPAK" H 7000 4450 50  0000 C CNN
+F 2 "PowerPackages:TO277A" H 7000 4550 50  0001 C CNN
+F 3 "" H 7000 4550 50  0000 C CNN
+	1    7000 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4350 9700 4350
+Connection ~ 9700 4350
+Wire Wire Line
+	6950 4750 7050 4750
+Wire Wire Line
+	7000 4750 7000 5350
+Connection ~ 7000 5350
+Connection ~ 7000 4750
+$EndSCHEMATC

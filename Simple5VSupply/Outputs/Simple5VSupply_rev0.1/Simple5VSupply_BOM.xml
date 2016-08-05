@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/aghosh01/kicad_projects/Simple5VSupply/Simple5VSupply.sch</source>
+    <date>Thu 07 Apr 2016 02:52:53 AM EDT</date>
+    <tool>Eeschema 4.0.2-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Simple5VSupply.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C5">
+      <value>39 nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="manf#">08055C393KAT2A</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57058D01</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10 nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="manf#">C0805C103K5RACTU</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57058D60</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10 uF</value>
+      <footprint>Capacitors_SMD:C_1210_HandSoldering</footprint>
+      <fields>
+        <field name="manf#">GRM32ER7YA106KA12L</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57058D83</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1 uF</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <fields>
+        <field name="manf#">GRM188R61E105KA12D</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57058DA0</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>120 uF</value>
+      <footprint>capacitors:Radial_SMD_8mm</footprint>
+      <fields>
+        <field name="manf#">APXE100ARA121MF61G</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57058DD5</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>6.5 uH, 18 mOhm</value>
+      <footprint>PowerPackages:SRR1208</footprint>
+      <fields>
+        <field name="manf#">SRR1208-6R5ML</field>
+      </fields>
+      <libsource lib="device" part="INDUCTOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57059DF9</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>ZENER</value>
+      <footprint>PowerPackages:DPAK_TO252AA_CUSTOM</footprint>
+      <fields>
+        <field name="manf#">50WQ04FNPBF</field>
+      </fields>
+      <libsource lib="device" part="ZENER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5705A072</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM22679</value>
+      <footprint>PowerPackages:TI_TO-263</footprint>
+      <fields>
+        <field name="manf#">LM22679TJ-5.0/NOPB</field>
+      </fields>
+      <libsource lib="PowerManagement" part="LM22679"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5705BDDD</tstamp>
+    </comp>
+    <comp ref="TH1">
+      <value>PTH</value>
+      <footprint>mechanical:PTH</footprint>
+      <libsource lib="mechanical" part="PTH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5705C007</tstamp>
+    </comp>
+    <comp ref="TH2">
+      <value>PTH</value>
+      <footprint>mechanical:PTH</footprint>
+      <libsource lib="mechanical" part="PTH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5705C0CE</tstamp>
+    </comp>
+    <comp ref="TH3">
+      <value>PTH</value>
+      <footprint>mechanical:PTH</footprint>
+      <libsource lib="mechanical" part="PTH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5705C119</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="INDUCTOR">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerManagement" part="LM22679">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM22679</field>
+        <field name="manf#">LM22679TJ-5.0/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="output"/>
+        <pin num="2" name="VIN" type="input"/>
+        <pin num="3" name="BOOT" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="IADJ" type="input"/>
+        <pin num="6" name="FB" type="input"/>
+        <pin num="7" name="SS" type="output"/>
+        <pin num="8" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="mechanical" part="PTH">
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">PTH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="ZENER">
+      <description>Diode zener</description>
+      <footprints>
+        <fp>D?</fp>
+        <fp>SO*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ZENER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="PowerManagement">
+      <uri>/home/aghosh01/kicad_libraries/PowerManagement.lib</uri>
+    </library>
+    <library logical="mechanical">
+      <uri>/home/aghosh01/kicad_libraries/mechanical.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="2" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="3" name="Earth">
+      <node ref="TH2" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="D1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="4" name="/5V_OUT">
+      <node ref="U1" pin="6"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="TH3" pin="1"/>
+    </net>
+    <net code="5" name="/VIN">
+      <node ref="U1" pin="2"/>
+      <node ref="TH1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="6" name="/SW_OUT">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+  </nets>
+</export>

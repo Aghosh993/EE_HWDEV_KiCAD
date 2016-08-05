@@ -1,0 +1,789 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TARS_WiringDiagramSymbols
+LIBS:TARS_TopLevel_WiringDiagram-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Servo Wiring"
+Date "03/11/2016"
+Rev "0.1"
+Comp ""
+Comment1 "TARS-SCH-EE00001"
+Comment2 ""
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+$Comp
+L Servo M?
+U 1 1 56E2CD3D
+P 6650 1850
+F 0 "M?" H 6500 2150 60  0000 C CNN
+F 1 "Servo" H 6550 1650 60  0000 C CNN
+F 2 "" H 6650 1850 60  0000 C CNN
+F 3 "" H 6650 1850 60  0000 C CNN
+	1    6650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CEFC
+P 3350 3550
+F 0 "M?" H 3200 3850 60  0000 C CNN
+F 1 "Servo" H 3250 3350 60  0000 C CNN
+F 2 "" H 3350 3550 60  0000 C CNN
+F 3 "" H 3350 3550 60  0000 C CNN
+	1    3350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CF1F
+P 3350 4750
+F 0 "M?" H 3200 5050 60  0000 C CNN
+F 1 "Servo" H 3250 4550 60  0000 C CNN
+F 2 "" H 3350 4750 60  0000 C CNN
+F 3 "" H 3350 4750 60  0000 C CNN
+	1    3350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CF4A
+P 6400 3600
+F 0 "M?" H 6250 3900 60  0000 C CNN
+F 1 "Servo" H 6300 3400 60  0000 C CNN
+F 2 "" H 6400 3600 60  0000 C CNN
+F 3 "" H 6400 3600 60  0000 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CF67
+P 6150 4800
+F 0 "M?" H 6000 5100 60  0000 C CNN
+F 1 "Servo" H 6050 4600 60  0000 C CNN
+F 2 "" H 6150 4800 60  0000 C CNN
+F 3 "" H 6150 4800 60  0000 C CNN
+	1    6150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CF8E
+P 3050 7150
+F 0 "M?" H 2900 7450 60  0000 C CNN
+F 1 "Servo" H 2950 6950 60  0000 C CNN
+F 2 "" H 3050 7150 60  0000 C CNN
+F 3 "" H 3050 7150 60  0000 C CNN
+	1    3050 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CFBD
+P 6100 5950
+F 0 "M?" H 5950 6250 60  0000 C CNN
+F 1 "Servo" H 6000 5750 60  0000 C CNN
+F 2 "" H 6100 5950 60  0000 C CNN
+F 3 "" H 6100 5950 60  0000 C CNN
+	1    6100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E2CFEE
+P 3050 6000
+F 0 "M?" H 2900 6300 60  0000 C CNN
+F 1 "Servo" H 2950 5800 60  0000 C CNN
+F 2 "" H 3050 6000 60  0000 C CNN
+F 3 "" H 3050 6000 60  0000 C CNN
+	1    3050 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D3BD
+P 2850 1750
+F 0 "P?" H 2550 2150 60  0000 C CNN
+F 1 "ServoConnector" H 2850 1250 60  0000 C CNN
+F 2 "" H 2950 1500 60  0000 C CNN
+F 3 "" H 2950 1500 60  0000 C CNN
+	1    2850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D47C
+P 1150 3450
+F 0 "P?" H 850 3850 60  0000 C CNN
+F 1 "ServoConnector" H 1150 2950 60  0000 C CNN
+F 2 "" H 1250 3200 60  0000 C CNN
+F 3 "" H 1250 3200 60  0000 C CNN
+	1    1150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D4B5
+P 1150 4650
+F 0 "P?" H 850 5050 60  0000 C CNN
+F 1 "ServoConnector" H 1150 4150 60  0000 C CNN
+F 2 "" H 1250 4400 60  0000 C CNN
+F 3 "" H 1250 4400 60  0000 C CNN
+	1    1150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D4F2
+P 4200 3500
+F 0 "P?" H 3900 3900 60  0000 C CNN
+F 1 "ServoConnector" H 4200 3000 60  0000 C CNN
+F 2 "" H 4300 3250 60  0000 C CNN
+F 3 "" H 4300 3250 60  0000 C CNN
+	1    4200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D527
+P 4200 4700
+F 0 "P?" H 3900 5100 60  0000 C CNN
+F 1 "ServoConnector" H 4200 4200 60  0000 C CNN
+F 2 "" H 4300 4450 60  0000 C CNN
+F 3 "" H 4300 4450 60  0000 C CNN
+	1    4200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D558
+P 1150 7050
+F 0 "P?" H 850 7450 60  0000 C CNN
+F 1 "ServoConnector" H 1150 6550 60  0000 C CNN
+F 2 "" H 1250 6800 60  0000 C CNN
+F 3 "" H 1250 6800 60  0000 C CNN
+	1    1150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D58F
+P 4200 5850
+F 0 "P?" H 3900 6250 60  0000 C CNN
+F 1 "ServoConnector" H 4200 5350 60  0000 C CNN
+F 2 "" H 4300 5600 60  0000 C CNN
+F 3 "" H 4300 5600 60  0000 C CNN
+	1    4200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E2D5CC
+P 1150 5900
+F 0 "P?" H 850 6300 60  0000 C CNN
+F 1 "ServoConnector" H 1150 5400 60  0000 C CNN
+F 2 "" H 1250 5650 60  0000 C CNN
+F 3 "" H 1250 5650 60  0000 C CNN
+	1    1150 5900
+	1    0    0    -1  
+$EndComp
+Text Notes 550  7950 0    60   ~ 0
+Based on scheme found in: \nhttp://i0.wp.com/robotsforroboticists.com/wordpress/wp-content/uploads/2014/03/Wire_Harness.png
+Wire Wire Line
+	3200 1600 4400 1600
+Wire Wire Line
+	4400 1600 4400 1700
+Wire Wire Line
+	4400 1700 6250 1700
+Wire Wire Line
+	3200 1800 6250 1800
+Wire Wire Line
+	3200 2000 4400 2000
+Wire Wire Line
+	4400 2000 4400 1900
+Wire Wire Line
+	4400 1900 6250 1900
+Wire Wire Line
+	1500 3500 2950 3500
+Wire Wire Line
+	1500 4700 2950 4700
+Wire Wire Line
+	4550 3550 6000 3550
+Wire Wire Line
+	1500 3300 2750 3300
+Wire Wire Line
+	2750 3300 2750 3400
+Wire Wire Line
+	2750 3400 2950 3400
+Wire Wire Line
+	1500 3700 2750 3700
+Wire Wire Line
+	2750 3700 2750 3600
+Wire Wire Line
+	2750 3600 2950 3600
+Wire Wire Line
+	1500 4500 2850 4500
+Wire Wire Line
+	2850 4500 2850 4600
+Wire Wire Line
+	2850 4600 2950 4600
+Wire Wire Line
+	1500 4900 2850 4900
+Wire Wire Line
+	2850 4900 2850 4800
+Wire Wire Line
+	2850 4800 2950 4800
+Wire Wire Line
+	4550 3350 5900 3350
+Wire Wire Line
+	5900 3350 5900 3450
+Wire Wire Line
+	5900 3450 6000 3450
+Wire Wire Line
+	4550 3750 5900 3750
+Wire Wire Line
+	5900 3750 5900 3650
+Wire Wire Line
+	5900 3650 6000 3650
+Wire Wire Line
+	4550 4550 5650 4550
+Wire Wire Line
+	5650 4550 5650 4650
+Wire Wire Line
+	5650 4650 5750 4650
+Wire Wire Line
+	4550 4750 5750 4750
+Wire Wire Line
+	4550 4950 5650 4950
+Wire Wire Line
+	5650 4950 5650 4850
+Wire Wire Line
+	5650 4850 5750 4850
+Wire Wire Line
+	1500 7100 2650 7100
+Wire Wire Line
+	1500 7300 2550 7300
+Wire Wire Line
+	2550 7300 2550 7200
+Wire Wire Line
+	2550 7200 2650 7200
+Wire Wire Line
+	1500 6900 2600 6900
+Wire Wire Line
+	2550 6900 2550 6650
+Wire Wire Line
+	2600 7000 2650 7000
+Wire Wire Line
+	4550 5900 5700 5900
+Wire Wire Line
+	4550 6100 5600 6100
+Wire Wire Line
+	5600 6100 5600 6000
+Wire Wire Line
+	5600 6000 5700 6000
+Wire Wire Line
+	4550 5700 5600 5700
+Wire Wire Line
+	5600 5700 5600 5800
+Wire Wire Line
+	5600 5800 5700 5800
+Wire Wire Line
+	1500 5950 2650 5950
+Wire Wire Line
+	1500 6150 2550 6150
+Wire Wire Line
+	2550 6150 2550 6050
+Wire Wire Line
+	2550 6050 2650 6050
+Wire Wire Line
+	1500 5750 2550 5750
+Wire Wire Line
+	2550 5750 2550 5850
+Wire Wire Line
+	2550 5850 2650 5850
+Text Notes 3650 1550 0    60   ~ 0
+Black
+Text Notes 3650 1750 0    60   ~ 0
+Red
+Text Notes 3650 1950 0    60   ~ 0
+Yellow
+Text Notes 2000 3250 0    60   ~ 0
+Black
+Text Notes 2000 3450 0    60   ~ 0
+Red
+Text Notes 2000 3650 0    60   ~ 0
+Yellow
+Text Notes 2000 4450 0    60   ~ 0
+Black
+Text Notes 2000 4650 0    60   ~ 0
+Red
+Text Notes 2000 4850 0    60   ~ 0
+Yellow
+Text Notes 5100 3300 0    60   ~ 0
+Black
+Text Notes 5100 3500 0    60   ~ 0
+Red
+Text Notes 5100 3700 0    60   ~ 0
+Yellow
+Text Notes 5100 4500 0    60   ~ 0
+Black
+Text Notes 5100 4700 0    60   ~ 0
+Red
+Text Notes 5100 4900 0    60   ~ 0
+Yellow
+Text Notes 2050 6850 0    60   ~ 0
+Black
+Text Notes 2050 7050 0    60   ~ 0
+Red
+Text Notes 2050 7250 0    60   ~ 0
+Yellow
+Text Notes 5100 5650 0    60   ~ 0
+Black
+Text Notes 5100 5850 0    60   ~ 0
+Red
+Text Notes 5100 6050 0    60   ~ 0
+Yellow
+Text Notes 2050 5700 0    60   ~ 0
+Black
+Text Notes 2050 5900 0    60   ~ 0
+Red
+Text Notes 2050 6100 0    60   ~ 0
+Yellow
+Text Notes 5700 1650 0    60   ~ 0
+Solder splice
+Text Notes 2500 2550 0    60   ~ 0
+All power and signal wires shall be 24 AWG\nBased on http://www.powerstream.com/Wire_Size.htm
+Text Notes 650  1200 0    60   ~ 0
+Connector board-side housing: Molex 0705530002\nPins: Integrated
+Text Notes 3250 1200 0    60   ~ 0
+Wiring harness termination housing: Molex 0050579403\nSockets: Molex 0016020086
+Wire Notes Line
+	600  950  6050 950 
+Wire Notes Line
+	6050 950  6050 1250
+Wire Notes Line
+	6050 1250 600  1250
+Wire Notes Line
+	600  1250 600  950 
+Wire Notes Line
+	3100 1250 3100 950 
+Text Notes 600  900  0    60   ~ 0
+Connector Housing Detail A (Expanded view of Servo Motor 0 connection):
+Text Notes 4050 2150 0    60   ~ 0
+Harness length: 270 mm
+Text Notes 1400 1850 0    60   ~ 0
+Solder-type PTH Pins
+Wire Notes Line
+	7050 750  7050 6350
+$Comp
+L ServoConnector P?
+U 1 1 56E316B4
+P 7800 1550
+F 0 "P?" H 7500 1950 60  0000 C CNN
+F 1 "ServoConnector" H 7800 1050 60  0000 C CNN
+F 2 "" H 7900 1300 60  0000 C CNN
+F 3 "" H 7900 1300 60  0000 C CNN
+	1    7800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ServoConnector P?
+U 1 1 56E316F9
+P 7800 3200
+F 0 "P?" H 7500 3600 60  0000 C CNN
+F 1 "ServoConnector" H 7800 2700 60  0000 C CNN
+F 2 "" H 7900 2950 60  0000 C CNN
+F 3 "" H 7900 2950 60  0000 C CNN
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E31740
+P 9950 1650
+F 0 "M?" H 9800 1950 60  0000 C CNN
+F 1 "Servo" H 9850 1450 60  0000 C CNN
+F 2 "" H 9950 1650 60  0000 C CNN
+F 3 "" H 9950 1650 60  0000 C CNN
+	1    9950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo M?
+U 1 1 56E318FC
+P 9950 3300
+F 0 "M?" H 9800 3600 60  0000 C CNN
+F 1 "Servo" H 9850 3100 60  0000 C CNN
+F 2 "" H 9950 3300 60  0000 C CNN
+F 3 "" H 9950 3300 60  0000 C CNN
+	1    9950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1600 9550 1600
+Wire Wire Line
+	8150 3250 9550 3250
+Wire Wire Line
+	8150 3450 9450 3450
+Wire Wire Line
+	9450 3450 9450 3350
+Wire Wire Line
+	9450 3350 9550 3350
+Wire Wire Line
+	8150 3050 9450 3050
+Wire Wire Line
+	9450 3050 9450 3150
+Wire Wire Line
+	9450 3150 9550 3150
+Wire Wire Line
+	8150 1800 9450 1800
+Wire Wire Line
+	9450 1800 9450 1700
+Wire Wire Line
+	9450 1700 9550 1700
+Wire Wire Line
+	8150 1400 9450 1400
+Wire Wire Line
+	9450 1400 9450 1500
+Wire Wire Line
+	9450 1500 9550 1500
+Text Notes 8650 1350 0    60   ~ 0
+Black
+Text Notes 8650 1550 0    60   ~ 0
+Red
+Text Notes 8650 1750 0    60   ~ 0
+Yellow
+Text Notes 8650 3000 0    60   ~ 0
+Black
+Text Notes 8650 3200 0    60   ~ 0
+Red
+Text Notes 8650 3400 0    60   ~ 0
+Yellow
+Text Notes 7350 1000 0    60   ~ 0
+(Detail A applies)
+Text Notes 7350 850  0    60   ~ 0
+Turret steering Servo Motor connections:
+Wire Notes Line
+	2500 2350 5000 2350
+Wire Notes Line
+	5000 2350 5000 2600
+Wire Notes Line
+	5000 2600 2500 2600
+Wire Notes Line
+	2500 2600 2500 2350
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E398EC
+P 4700 1550
+F 0 "#FLG?" H 4700 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 1730 50  0000 C CNN
+F 2 "" H 4700 1550 50  0000 C CNN
+F 3 "" H 4700 1550 50  0000 C CNN
+	1    4700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39928
+P 2550 3100
+F 0 "#FLG?" H 2550 3195 50  0001 C CNN
+F 1 "PWR_FLAG" H 2550 3280 50  0000 C CNN
+F 2 "" H 2550 3100 50  0000 C CNN
+F 3 "" H 2550 3100 50  0000 C CNN
+	1    2550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39964
+P 2500 4300
+F 0 "#FLG?" H 2500 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 4480 50  0000 C CNN
+F 2 "" H 2500 4300 50  0000 C CNN
+F 3 "" H 2500 4300 50  0000 C CNN
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39A04
+P 2450 5500
+F 0 "#FLG?" H 2450 5595 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 5680 50  0000 C CNN
+F 2 "" H 2450 5500 50  0000 C CNN
+F 3 "" H 2450 5500 50  0000 C CNN
+	1    2450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39A40
+P 2500 6650
+F 0 "#FLG?" H 2500 6745 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 6830 50  0000 C CNN
+F 2 "" H 2500 6650 50  0000 C CNN
+F 3 "" H 2500 6650 50  0000 C CNN
+	1    2500 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39A7C
+P 5550 3200
+F 0 "#FLG?" H 5550 3295 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 3380 50  0000 C CNN
+F 2 "" H 5550 3200 50  0000 C CNN
+F 3 "" H 5550 3200 50  0000 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39AB8
+P 5500 4300
+F 0 "#FLG?" H 5500 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 4480 50  0000 C CNN
+F 2 "" H 5500 4300 50  0000 C CNN
+F 3 "" H 5500 4300 50  0000 C CNN
+	1    5500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39AF4
+P 5500 5500
+F 0 "#FLG?" H 5500 5595 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 5680 50  0000 C CNN
+F 2 "" H 5500 5500 50  0000 C CNN
+F 3 "" H 5500 5500 50  0000 C CNN
+	1    5500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39B80
+P 9150 1250
+F 0 "#FLG?" H 9150 1345 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 1430 50  0000 C CNN
+F 2 "" H 9150 1250 50  0000 C CNN
+F 3 "" H 9150 1250 50  0000 C CNN
+	1    9150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E39BBC
+P 9150 2900
+F 0 "#FLG?" H 9150 2995 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 3080 50  0000 C CNN
+F 2 "" H 9150 2900 50  0000 C CNN
+F 3 "" H 9150 2900 50  0000 C CNN
+	1    9150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1550 4700 1800
+Connection ~ 4700 1800
+Wire Wire Line
+	2550 3100 2550 3500
+Connection ~ 2550 3500
+Wire Wire Line
+	2500 4300 2500 4700
+Connection ~ 2500 4700
+Wire Wire Line
+	2450 5500 2450 5950
+Connection ~ 2450 5950
+Wire Wire Line
+	2500 6650 2500 7100
+Connection ~ 2500 7100
+Wire Wire Line
+	5550 3200 5550 3550
+Connection ~ 5550 3550
+Wire Wire Line
+	5500 4300 5500 4750
+Connection ~ 5500 4750
+Wire Wire Line
+	5500 5500 5500 5900
+Connection ~ 5500 5900
+Wire Wire Line
+	9150 2900 9150 3250
+Connection ~ 9150 3250
+Wire Wire Line
+	9150 1250 9150 1600
+Connection ~ 9150 1600
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A709
+P 5150 1550
+F 0 "#FLG?" H 5150 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 1730 50  0000 C CNN
+F 2 "" H 5150 1550 50  0000 C CNN
+F 3 "" H 5150 1550 50  0000 C CNN
+	1    5150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A745
+P 2950 3100
+F 0 "#FLG?" H 2950 3195 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 3280 50  0000 C CNN
+F 2 "" H 2950 3100 50  0000 C CNN
+F 3 "" H 2950 3100 50  0000 C CNN
+	1    2950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A781
+P 2950 4300
+F 0 "#FLG?" H 2950 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 4480 50  0000 C CNN
+F 2 "" H 2950 4300 50  0000 C CNN
+F 3 "" H 2950 4300 50  0000 C CNN
+	1    2950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A7BD
+P 2900 5500
+F 0 "#FLG?" H 2900 5595 50  0001 C CNN
+F 1 "PWR_FLAG" H 2900 5680 50  0000 C CNN
+F 2 "" H 2900 5500 50  0000 C CNN
+F 3 "" H 2900 5500 50  0000 C CNN
+	1    2900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A821
+P 2950 6650
+F 0 "#FLG?" H 2950 6745 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 6830 50  0000 C CNN
+F 2 "" H 2950 6650 50  0000 C CNN
+F 3 "" H 2950 6650 50  0000 C CNN
+	1    2950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A8E9
+P 5950 4300
+F 0 "#FLG?" H 5950 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 4480 50  0000 C CNN
+F 2 "" H 5950 4300 50  0000 C CNN
+F 3 "" H 5950 4300 50  0000 C CNN
+	1    5950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A925
+P 5950 5500
+F 0 "#FLG?" H 5950 5595 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 5680 50  0000 C CNN
+F 2 "" H 5950 5500 50  0000 C CNN
+F 3 "" H 5950 5500 50  0000 C CNN
+	1    5950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3A9D9
+P 9600 1250
+F 0 "#FLG?" H 9600 1345 50  0001 C CNN
+F 1 "PWR_FLAG" H 9600 1430 50  0000 C CNN
+F 2 "" H 9600 1250 50  0000 C CNN
+F 3 "" H 9600 1250 50  0000 C CNN
+	1    9600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E3AA15
+P 9600 2900
+F 0 "#FLG?" H 9600 2995 50  0001 C CNN
+F 1 "PWR_FLAG" H 9600 3080 50  0000 C CNN
+F 2 "" H 9600 2900 50  0000 C CNN
+F 3 "" H 9600 2900 50  0000 C CNN
+	1    9600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1550 5150 1700
+Connection ~ 5150 1700
+Wire Wire Line
+	2950 3100 2700 3100
+Wire Wire Line
+	2700 3100 2700 3300
+Connection ~ 2700 3300
+Wire Wire Line
+	2950 4300 2800 4300
+Wire Wire Line
+	2800 4300 2800 4500
+Connection ~ 2800 4500
+Wire Wire Line
+	2900 5500 2500 5500
+Wire Wire Line
+	2500 5500 2500 5750
+Connection ~ 2500 5750
+Wire Wire Line
+	2550 6650 2950 6650
+Connection ~ 2550 6900
+Wire Wire Line
+	2600 6900 2600 7000
+Wire Wire Line
+	5950 4300 5550 4300
+Wire Wire Line
+	5550 4300 5550 4550
+Connection ~ 5550 4550
+Wire Wire Line
+	5950 5500 5550 5500
+Wire Wire Line
+	5550 5500 5550 5700
+Connection ~ 5550 5700
+Wire Wire Line
+	9600 2900 9300 2900
+Wire Wire Line
+	9300 2900 9300 3050
+Connection ~ 9300 3050
+Wire Wire Line
+	9600 1250 9300 1250
+Wire Wire Line
+	9300 1250 9300 1400
+Connection ~ 9300 1400
+$EndSCHEMATC

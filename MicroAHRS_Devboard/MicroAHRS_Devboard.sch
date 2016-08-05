@@ -1,0 +1,412 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:MicroAHRS_Devboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DB9 J1
+U 1 1 572A4BE9
+P 9800 2500
+F 0 "J1" H 9800 3050 50  0000 C CNN
+F 1 "DB9" H 9800 1950 50  0000 C CNN
+F 2 "Connect:DB9MC" H 9800 2500 50  0001 C CNN
+F 3 "" H 9800 2500 50  0000 C CNN
+F 4 "182-009-113R531" H 9800 2500 60  0001 C CNN "manf#"
+	1    9800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT232RL U1
+U 1 1 572A4CA2
+P 6400 3200
+F 0 "U1" H 5750 4100 50  0000 L CNN
+F 1 "FT232RL" H 6800 4100 50  0000 L CNN
+F 2 "Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm" H 6400 3200 50  0001 C CNN
+F 3 "" H 6400 3200 50  0000 C CNN
+F 4 "FT232RL-REEL" H 6400 3200 60  0001 C CNN "manf#"
+	1    6400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P1
+U 1 1 572A4D1F
+P 1900 2250
+F 0 "P1" H 2225 2125 50  0000 C CNN
+F 1 "USB_OTG" H 1900 2450 50  0000 C CNN
+F 2 "Connect:USB_Micro-B" V 1850 2150 50  0001 C CNN
+F 3 "" V 1850 2150 50  0000 C CNN
+F 4 "10118193-0001LF" H 1900 2250 60  0001 C CNN "manf#"
+	1    1900 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 572A4E2B
+P 9000 2900
+F 0 "#PWR01" H 9000 2650 50  0001 C CNN
+F 1 "Earth" H 9000 2750 50  0001 C CNN
+F 2 "" H 9000 2900 50  0000 C CNN
+F 3 "" H 9000 2900 50  0000 C CNN
+	1    9000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 572A4E46
+P 6400 4200
+F 0 "#PWR02" H 6400 3950 50  0001 C CNN
+F 1 "Earth" H 6400 4050 50  0001 C CNN
+F 2 "" H 6400 4200 50  0000 C CNN
+F 3 "" H 6400 4200 50  0000 C CNN
+	1    6400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 572A4E5A
+P 2850 2700
+F 0 "#PWR03" H 2850 2450 50  0001 C CNN
+F 1 "Earth" H 2850 2550 50  0001 C CNN
+F 2 "" H 2850 2700 50  0000 C CNN
+F 3 "" H 2850 2700 50  0000 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+Text Label 2400 2250 0    60   ~ 0
+USB_D+
+Text Label 2400 2350 0    60   ~ 0
+USB_D-
+$Comp
+L C C1
+U 1 1 572A57FE
+P 1900 3600
+F 0 "C1" H 1925 3700 50  0000 L CNN
+F 1 "10 nF" H 1925 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1938 3450 50  0001 C CNN
+F 3 "" H 1900 3600 50  0000 C CNN
+F 4 "C1005X7R1H103K050BE" H 1900 3600 60  0001 C CNN "manf#"
+	1    1900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 572A58FE
+P 5150 3200
+F 0 "R1" V 5230 3200 50  0000 C CNN
+F 1 "10K" V 5150 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0000 C CNN
+F 4 "RC0603FR-0710KL" V 5150 3200 60  0001 C CNN "manf#"
+	1    5150 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 4200 6600 4200
+Connection ~ 6400 4200
+Connection ~ 6500 4200
+Wire Wire Line
+	1800 1850 2850 1850
+Wire Wire Line
+	2200 1850 2200 2050
+Wire Wire Line
+	2850 1850 2850 2700
+Connection ~ 2200 1850
+NoConn ~ 2200 2150
+Text Label 2450 2450 0    60   ~ 0
+VUSB
+Wire Wire Line
+	2200 2450 2450 2450
+Wire Wire Line
+	2200 2350 2400 2350
+Wire Wire Line
+	2200 2250 2400 2250
+Text Label 5150 2800 0    60   ~ 0
+USB_D+
+Text Label 5150 2900 0    60   ~ 0
+USB_D-
+Wire Wire Line
+	5150 2900 5600 2900
+Wire Wire Line
+	5150 2800 5600 2800
+Wire Wire Line
+	5300 3200 5600 3200
+$Comp
+L INDUCTOR L1
+U 1 1 572A5C96
+P 2450 3450
+F 0 "L1" V 2400 3450 50  0000 C CNN
+F 1 "40 Ohm FB" V 2550 3450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0000 C CNN
+F 4 "MI0805K400R-10" V 2450 3450 60  0001 C CNN "manf#"
+	1    2450 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 3450 2150 3450
+$Comp
+L Earth #PWR04
+U 1 1 572A5D20
+P 1900 3850
+F 0 "#PWR04" H 1900 3600 50  0001 C CNN
+F 1 "Earth" H 1900 3700 50  0001 C CNN
+F 2 "" H 1900 3850 50  0000 C CNN
+F 3 "" H 1900 3850 50  0000 C CNN
+	1    1900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3850 1900 3750
+Text Label 2900 3450 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	2750 3450 2900 3450
+Text Label 1600 3450 0    60   ~ 0
+VUSB
+Connection ~ 1900 3450
+Text Label 4550 3200 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	4550 3200 5000 3200
+Text Notes 1500 1750 0    60   ~ 0
+MicroUSB Connector
+Text Notes 1500 3150 0    60   ~ 0
+Input Filter
+Wire Notes Line
+	1500 1800 2950 1800
+Wire Notes Line
+	2950 1800 2950 2850
+Wire Notes Line
+	2950 2850 1500 2850
+Wire Notes Line
+	1500 2850 1500 1800
+Wire Notes Line
+	1500 3200 3350 3200
+Wire Notes Line
+	3350 3200 3350 4050
+Wire Notes Line
+	3350 4050 1500 4050
+Wire Notes Line
+	1500 4050 1500 3200
+$Comp
+L C C2
+U 1 1 572A6216
+P 1900 4800
+F 0 "C2" H 1925 4900 50  0000 L CNN
+F 1 "0.1 uF" H 1925 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1938 4650 50  0001 C CNN
+F 3 "" H 1900 4800 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 1900 4800 60  0001 C CNN "manf#"
+	1    1900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 572A6279
+P 2350 4800
+F 0 "C3" H 2375 4900 50  0000 L CNN
+F 1 "0.1 uF" H 2375 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2388 4650 50  0001 C CNN
+F 3 "" H 2350 4800 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 2350 4800 60  0001 C CNN "manf#"
+	1    2350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2900 9350 2900
+NoConn ~ 7200 3900
+NoConn ~ 7200 3800
+NoConn ~ 7200 3700
+NoConn ~ 7200 3600
+NoConn ~ 7200 3500
+NoConn ~ 7200 3200
+NoConn ~ 7200 3100
+NoConn ~ 7200 3000
+NoConn ~ 7200 2900
+NoConn ~ 7200 2800
+NoConn ~ 7200 2700
+Text Label 7300 2500 0    60   ~ 0
+UART_TX
+Text Label 7300 2600 0    60   ~ 0
+UART_RX
+Wire Wire Line
+	7200 2600 7300 2600
+Wire Wire Line
+	7200 2500 7300 2500
+Text Label 8900 2200 0    60   ~ 0
+UART_RX
+Text Label 8900 2100 0    60   ~ 0
+UART_TX
+Wire Wire Line
+	8900 2200 9350 2200
+Wire Wire Line
+	8900 2100 9350 2100
+Text Notes 1500 4350 0    60   ~ 0
+Decoupling Capacitors
+Text Notes 1500 5350 0    60   ~ 0
+Layout Note: Place these capacitors as close to FTDI chip as possible!
+Wire Notes Line
+	1500 4400 2850 4400
+Wire Notes Line
+	2850 4400 2850 5200
+Wire Notes Line
+	2850 5200 1500 5200
+Wire Notes Line
+	1500 5200 1500 4400
+Text Notes 8800 1850 0    60   ~ 0
+Output Connector:
+Wire Notes Line
+	8800 1900 10150 1900
+Wire Notes Line
+	10150 1900 10150 3150
+Wire Notes Line
+	10150 3150 8800 3150
+Wire Notes Line
+	8800 3150 8800 1900
+$Comp
+L C C4
+U 1 1 572A759C
+P 4750 2650
+F 0 "C4" H 4775 2750 50  0000 L CNN
+F 1 "0.1 uF" H 4775 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4788 2500 50  0001 C CNN
+F 3 "" H 4750 2650 50  0000 C CNN
+F 4 "GRM188R71E104KA01D" H 4750 2650 60  0001 C CNN "manf#"
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2500 5600 2500
+$Comp
+L Earth #PWR05
+U 1 1 572A771A
+P 4750 2850
+F 0 "#PWR05" H 4750 2600 50  0001 C CNN
+F 1 "Earth" H 4750 2700 50  0001 C CNN
+F 2 "" H 4750 2850 50  0000 C CNN
+F 3 "" H 4750 2850 50  0000 C CNN
+	1    4750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2850 4750 2800
+Wire Wire Line
+	6300 2200 6500 2200
+Text Label 6400 2100 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	6400 2200 6400 2100
+Connection ~ 6400 2200
+NoConn ~ 5600 3900
+NoConn ~ 5600 3600
+NoConn ~ 5600 3400
+Wire Notes Line
+	4500 1900 7850 1900
+Wire Notes Line
+	7850 1900 7850 4400
+Wire Notes Line
+	7850 4400 4500 4400
+Wire Notes Line
+	4500 4400 4500 1900
+Text Notes 4500 1850 0    60   ~ 0
+USB-UART Converter IC
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 572A8275
+P 2800 3500
+F 0 "#FLG06" H 2800 3595 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 3680 50  0000 C CNN
+F 2 "" H 2800 3500 50  0000 C CNN
+F 3 "" H 2800 3500 50  0000 C CNN
+	1    2800 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 3500 2800 3450
+Connection ~ 2800 3450
+Wire Wire Line
+	1900 4950 2350 4950
+Wire Wire Line
+	1900 4650 2350 4650
+$Comp
+L Earth #PWR07
+U 1 1 572A84E4
+P 2150 5000
+F 0 "#PWR07" H 2150 4750 50  0001 C CNN
+F 1 "Earth" H 2150 4850 50  0001 C CNN
+F 2 "" H 2150 5000 50  0000 C CNN
+F 3 "" H 2150 5000 50  0000 C CNN
+	1    2150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5000 2150 4950
+Connection ~ 2150 4950
+Text Label 2100 4550 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	2100 4650 2100 4550
+Connection ~ 2100 4650
+NoConn ~ 9350 2700
+NoConn ~ 9350 2600
+NoConn ~ 9350 2500
+NoConn ~ 9350 2400
+NoConn ~ 9350 2300
+Text Label 8900 2800 0    60   ~ 0
+VUSB_FLT
+Wire Wire Line
+	8900 2800 9350 2800
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 572A8D2E
+P 2550 1850
+F 0 "#FLG08" H 2550 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 2550 2030 50  0000 C CNN
+F 2 "" H 2550 1850 50  0000 C CNN
+F 3 "" H 2550 1850 50  0000 C CNN
+	1    2550 1850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2550 1850
+$EndSCHEMATC
