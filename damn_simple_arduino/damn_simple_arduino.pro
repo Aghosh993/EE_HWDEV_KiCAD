@@ -1,4 +1,4 @@
-update=Fri 25 Nov 2016 12:56:48 PM EST
+update=Fri 25 Nov 2016 03:16:03 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,7 +62,7 @@ LibName30=ftdi
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/home/aghosh01/kicad_schematic_layouts/AbhisHacks.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=Schematic_PDF/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
