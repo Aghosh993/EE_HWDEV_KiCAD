@@ -1,0 +1,262 @@
+EESchema Schematic File Version 2
+LIBS:arduino++-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:sensors
+LIBS:PowerManagement
+LIBS:MEMS
+LIBS:mux_demux
+LIBS:mechanical
+LIBS:arduino++-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "RoboBoard"
+Date ""
+Rev ""
+Comp ""
+Comment1 "POLYBOTS-00001"
+Comment2 "POLYBOTS-50001"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+$Comp
+L LSM6DS3H U7
+U 1 1 582D184F
+P 6450 3750
+F 0 "U7" H 6050 4350 60  0000 C CNN
+F 1 "LSM6DS3H" H 6200 3050 60  0000 C CNN
+F 2 "sensors:LCC-14" H 6350 4000 60  0001 C CNN
+F 3 "" H 6350 4000 60  0001 C CNN
+F 4 "LSM6DS3HTR" H 6700 4350 60  0001 C CNN "manf#"
+	1    6450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR050
+U 1 1 582D1878
+P 5500 4250
+F 0 "#PWR050" H 5500 4000 50  0001 C CNN
+F 1 "Earth" H 5500 4100 50  0001 C CNN
+F 2 "" H 5500 4250 50  0000 C CNN
+F 3 "" H 5500 4250 50  0000 C CNN
+	1    5500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR051
+U 1 1 582D1A8F
+P 5500 2600
+F 0 "#PWR051" H 5500 2450 50  0001 C CNN
+F 1 "+3.3V" H 5500 2740 50  0000 C CNN
+F 2 "" H 5500 2600 50  0000 C CNN
+F 3 "" H 5500 2600 50  0000 C CNN
+	1    5500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 582D1CB0
+P 5000 4000
+F 0 "C21" H 5025 4100 50  0000 L CNN
+F 1 "0.1 uF" H 5025 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5038 3850 50  0001 C CNN
+F 3 "" H 5000 4000 50  0000 C CNN
+F 4 "GRM155R61E104KA87D" H 5000 4000 60  0001 C CNN "manf#"
+	1    5000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 582D1D1C
+P 4550 4000
+F 0 "C20" H 4575 4100 50  0000 L CNN
+F 1 "0.1 uF" H 4575 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4588 3850 50  0001 C CNN
+F 3 "" H 4550 4000 50  0000 C CNN
+F 4 "GRM155R61E104KA87D" H 4550 4000 60  0001 C CNN "manf#"
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR052
+U 1 1 582D1F23
+P 4800 4250
+F 0 "#PWR052" H 4800 4000 50  0001 C CNN
+F 1 "Earth" H 4800 4100 50  0001 C CNN
+F 2 "" H 4800 4250 50  0000 C CNN
+F 3 "" H 4800 4250 50  0000 C CNN
+	1    4800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 582D2109
+P 4750 3100
+F 0 "R13" V 4850 3100 50  0000 C CNN
+F 1 "4.7K" V 4650 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 4680 3100 50  0001 C CNN
+F 3 "" H 4750 3100 50  0000 C CNN
+F 4 "RC0402JR-074K7L" V 4750 3100 60  0001 C CNN "manf#"
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+Text HLabel 2850 3650 0    60   Input ~ 0
+IMU_CS
+Text HLabel 2850 3550 0    60   Input ~ 0
+SPI_CLK
+Text HLabel 2850 3450 0    60   Output ~ 0
+MISO
+Text HLabel 2850 3350 0    60   Input ~ 0
+MOSI
+$Comp
+L Earth #PWR053
+U 1 1 582D23C6
+P 7500 3800
+F 0 "#PWR053" H 7500 3550 50  0001 C CNN
+F 1 "Earth" H 7500 3650 50  0001 C CNN
+F 2 "" H 7500 3800 50  0000 C CNN
+F 3 "" H 7500 3800 50  0000 C CNN
+	1    7500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3850 5500 2600
+Wire Wire Line
+	4550 3850 5800 3850
+Wire Wire Line
+	5700 3850 5700 3950
+Wire Wire Line
+	5700 3950 5800 3950
+Connection ~ 5700 3850
+Wire Wire Line
+	5500 4250 5500 4150
+Wire Wire Line
+	5500 4150 5800 4150
+Wire Wire Line
+	5700 4150 5700 4050
+Wire Wire Line
+	5700 4050 5800 4050
+Connection ~ 5700 4150
+Connection ~ 5500 3850
+Connection ~ 5000 3850
+Wire Wire Line
+	4550 4150 5000 4150
+Wire Wire Line
+	4800 4250 4800 4150
+Connection ~ 4800 4150
+Wire Wire Line
+	4750 2950 4750 2850
+Connection ~ 5500 2850
+Wire Wire Line
+	4750 3250 4750 3650
+Wire Wire Line
+	2850 3650 5800 3650
+Connection ~ 4750 3650
+Wire Wire Line
+	2850 3550 5800 3550
+Wire Wire Line
+	5800 3450 2850 3450
+Wire Wire Line
+	2850 3350 5800 3350
+Wire Wire Line
+	4750 2850 5500 2850
+Wire Wire Line
+	7050 3650 7100 3650
+Wire Wire Line
+	7100 3650 7100 3750
+Wire Wire Line
+	7050 3750 7500 3750
+Wire Wire Line
+	7500 3750 7500 3800
+Connection ~ 7100 3750
+Wire Wire Line
+	4200 3650 4200 3150
+Connection ~ 4200 3650
+$Comp
+L TEST_1P W6
+U 1 1 58A92676
+P 4200 3150
+F 0 "W6" H 4200 3420 50  0000 C CNN
+F 1 "TEST_1P" H 4200 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4400 3150 50  0001 C CNN
+F 3 "" H 4400 3150 50  0000 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3550 8750 3550
+Wire Wire Line
+	7050 3450 8300 3450
+Wire Wire Line
+	7050 3350 7800 3350
+$Comp
+L TEST_1P W9
+U 1 1 58A927BB
+P 8750 3150
+F 0 "W9" H 8750 3420 50  0000 C CNN
+F 1 "TEST_1P" H 8750 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8950 3150 50  0001 C CNN
+F 3 "" H 8950 3150 50  0000 C CNN
+	1    8750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W8
+U 1 1 58A92765
+P 8300 3150
+F 0 "W8" H 8300 3420 50  0000 C CNN
+F 1 "TEST_1P" H 8300 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8500 3150 50  0001 C CNN
+F 3 "" H 8500 3150 50  0000 C CNN
+	1    8300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W7
+U 1 1 58A926C2
+P 7800 3150
+F 0 "W7" H 7800 3420 50  0000 C CNN
+F 1 "TEST_1P" H 7800 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8000 3150 50  0001 C CNN
+F 3 "" H 8000 3150 50  0000 C CNN
+	1    7800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3550 8750 3150
+Wire Wire Line
+	8300 3450 8300 3150
+Wire Wire Line
+	7800 3350 7800 3150
+$EndSCHEMATC

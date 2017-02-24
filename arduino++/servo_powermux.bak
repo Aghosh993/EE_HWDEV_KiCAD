@@ -1,0 +1,270 @@
+EESchema Schematic File Version 2
+LIBS:arduino++-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:sensors
+LIBS:PowerManagement
+LIBS:MEMS
+LIBS:mux_demux
+LIBS:mechanical
+LIBS:arduino++-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "RoboBoard"
+Date ""
+Rev ""
+Comp ""
+Comment1 "POLYBOTS-00001"
+Comment2 "POLYBOTS-50001"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
+$EndDescr
+Text HLabel 4300 2250 0    60   Input ~ 0
+6V_USER_IN
+Text HLabel 7650 2250 2    60   Output ~ 0
+SERVO_VDD_OUT
+Text GLabel 3250 4050 0    60   Input ~ 0
+SERVO_5V_INTERNAL
+$Comp
+L LM5050-1 U9
+U 1 1 58A814BE
+P 5550 2850
+F 0 "U9" H 5000 3050 60  0000 C CNN
+F 1 "LM5050-1" H 5000 2500 60  0000 C CNN
+F 2 "PowerPackages:SOT-23-6-SC70" H 4900 2950 60  0001 C CNN
+F 3 "" H 5550 2850 60  0001 C CNN
+F 4 "LM5050MK-1/NOPB" H 5100 3150 60  0001 C CNN "manf#"
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM5050-1 U10
+U 1 1 58A8150E
+P 5600 4600
+F 0 "U10" H 5050 4800 60  0000 C CNN
+F 1 "LM5050-1" H 5050 4250 60  0000 C CNN
+F 2 "PowerPackages:SOT-23-6-SC70" H 4950 4700 60  0001 C CNN
+F 3 "" H 5600 4600 60  0001 C CNN
+F 4 "LM5050MK-1/NOPB" H 5150 4900 60  0001 C CNN "manf#"
+	1    5600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR065
+U 1 1 58A81613
+P 5400 3450
+F 0 "#PWR065" H 5400 3200 50  0001 C CNN
+F 1 "Earth" H 5400 3300 50  0001 C CNN
+F 2 "" H 5400 3450 50  0000 C CNN
+F 3 "" H 5400 3450 50  0000 C CNN
+	1    5400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR066
+U 1 1 58A8162B
+P 5450 5200
+F 0 "#PWR066" H 5450 4950 50  0001 C CNN
+F 1 "Earth" H 5450 5050 50  0001 C CNN
+F 2 "" H 5450 5200 50  0000 C CNN
+F 3 "" H 5450 5200 50  0000 C CNN
+	1    5450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR067
+U 1 1 58A8163C
+P 4600 3100
+F 0 "#PWR067" H 4600 2850 50  0001 C CNN
+F 1 "Earth" H 4600 2950 50  0001 C CNN
+F 2 "" H 4600 3100 50  0000 C CNN
+F 3 "" H 4600 3100 50  0000 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR068
+U 1 1 58A8164D
+P 4650 4850
+F 0 "#PWR068" H 4650 4600 50  0001 C CNN
+F 1 "Earth" H 4650 4700 50  0001 C CNN
+F 2 "" H 4650 4850 50  0000 C CNN
+F 3 "" H 4650 4850 50  0000 C CNN
+	1    4650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2450
+Wire Wire Line
+	5600 2450 5600 2250
+Wire Wire Line
+	5600 2250 7650 2250
+Wire Wire Line
+	3250 4050 5250 4050
+Wire Wire Line
+	5250 4050 5250 4200
+Wire Wire Line
+	5650 4200 5650 4050
+Wire Wire Line
+	5650 4050 6300 4050
+Wire Wire Line
+	6300 4050 6300 2250
+Connection ~ 6300 2250
+Wire Wire Line
+	4650 4850 4650 4750
+Wire Wire Line
+	4650 4750 4950 4750
+Wire Wire Line
+	4600 3100 4600 3000
+Wire Wire Line
+	4600 3000 4900 3000
+Wire Wire Line
+	5450 5200 5450 5050
+Wire Wire Line
+	5400 3450 5400 3300
+Text HLabel 6500 3000 2    60   Input ~ 0
+6V_USER_IN
+Wire Wire Line
+	5900 3000 6500 3000
+Text GLabel 6500 4750 2    60   Input ~ 0
+SERVO_5V_INTERNAL
+Wire Wire Line
+	5950 4750 6500 4750
+$Comp
+L Q_NMOS_DGS Q2
+U 1 1 58A818AE
+P 5450 3950
+F 0 "Q2" H 5650 4000 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5650 3900 50  0001 L CNN
+F 2 "PowerPackages:SOT2-3_FET" H 5650 4050 50  0001 C CNN
+F 3 "" H 5450 3950 50  0000 C CNN
+F 4 "IRLL3303TRPBF" H 5450 3950 60  0001 C CNN "manf#"
+	1    5450 3950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5000 4050 5000 3850
+Wire Wire Line
+	5000 3850 5250 3850
+Connection ~ 5000 4050
+Wire Wire Line
+	5450 4200 5450 4150
+Wire Wire Line
+	5650 3850 5850 3850
+Wire Wire Line
+	5850 3850 5850 4050
+Connection ~ 5850 4050
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 58A81AC0
+P 5400 2100
+F 0 "Q1" H 5600 2150 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5600 2050 50  0001 L CNN
+F 2 "PowerPackages:SOT2-3_FET" H 5600 2200 50  0001 C CNN
+F 3 "" H 5400 2100 50  0000 C CNN
+F 4 "IRLL3303TRPBF" H 5400 2100 60  0001 C CNN "manf#"
+	1    5400 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4950 2250 4950 2000
+Wire Wire Line
+	4950 2000 5200 2000
+Connection ~ 4950 2250
+Wire Wire Line
+	5400 2450 5400 2300
+Wire Wire Line
+	5600 2000 5800 2000
+Wire Wire Line
+	5800 2000 5800 2250
+Connection ~ 5800 2250
+$Comp
+L D_Zener D3
+U 1 1 58A827EC
+P 4550 2500
+F 0 "D3" H 4550 2600 50  0000 C CNN
+F 1 "D_Zener" H 4550 2400 50  0000 C CNN
+F 2 "PowerPackages:DO-214AA" H 4550 2500 50  0001 C CNN
+F 3 "" H 4550 2500 50  0000 C CNN
+F 4 "SMBJ7.5A" H 4550 2500 60  0001 C CNN "manf#"
+	1    4550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR069
+U 1 1 58A8286D
+P 4550 2750
+F 0 "#PWR069" H 4550 2500 50  0001 C CNN
+F 1 "Earth" H 4550 2600 50  0001 C CNN
+F 2 "" H 4550 2750 50  0000 C CNN
+F 3 "" H 4550 2750 50  0000 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR070
+U 1 1 58A8288D
+P 7400 2750
+F 0 "#PWR070" H 7400 2500 50  0001 C CNN
+F 1 "Earth" H 7400 2600 50  0001 C CNN
+F 2 "" H 7400 2750 50  0000 C CNN
+F 3 "" H 7400 2750 50  0000 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2650 4550 2750
+Wire Wire Line
+	4550 2350 4550 2250
+Connection ~ 4550 2250
+Wire Wire Line
+	7400 2750 7400 2650
+Wire Wire Line
+	7400 2350 7400 2250
+Connection ~ 7400 2250
+$Comp
+L D_Zener D4
+U 1 1 58A82A84
+P 7400 2500
+F 0 "D4" H 7400 2600 50  0000 C CNN
+F 1 "D_Zener" H 7400 2400 50  0000 C CNN
+F 2 "PowerPackages:DO-214AA" H 7400 2500 50  0001 C CNN
+F 3 "" H 7400 2500 50  0000 C CNN
+F 4 "SMBJ7.5A" H 7400 2500 60  0001 C CNN "manf#"
+	1    7400 2500
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
