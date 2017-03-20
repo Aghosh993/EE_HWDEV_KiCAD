@@ -1,0 +1,293 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PowerManagement
+LIBS:ftdi
+LIBS:stm32_interface_board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3550 3500 0    60   Input ~ 0
+M1_PWM1
+Text HLabel 3550 3600 0    60   Input ~ 0
+M1_PWM2
+Text HLabel 3550 3800 0    60   Input ~ 0
+M2_PWM1
+Text HLabel 3550 3900 0    60   Input ~ 0
+M2_PWM2
+$Comp
+L A3909 U1
+U 1 1 58B8563E
+P 6250 3650
+F 0 "U1" H 6100 3950 60  0000 C CNN
+F 1 "A3909" H 6150 3250 60  0000 C CNN
+F 2 "PowerPackages:MSOP10-3x3-EP" H 6250 3650 60  0001 C CNN
+F 3 "" H 6250 3650 60  0001 C CNN
+F 4 "A3909GLYTR-T" H 6200 4050 60  0001 C CNN "manf#"
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58B85698
+P 3950 4350
+F 0 "R1" V 4050 4350 50  0000 C CNN
+F 1 "R" V 3850 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3880 4350 50  0001 C CNN
+F 3 "" H 3950 4350 50  0000 C CNN
+F 4 "RC0603JR-074K7L" V 3950 4350 60  0001 C CNN "manf#"
+	1    3950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR29
+U 1 1 58B85868
+P 4550 4650
+F 0 "#PWR29" H 4550 4400 50  0001 C CNN
+F 1 "Earth" H 4550 4500 50  0001 C CNN
+F 2 "" H 4550 4650 50  0000 C CNN
+F 3 "" H 4550 4650 50  0000 C CNN
+	1    4550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR31
+U 1 1 58B85952
+P 7300 4600
+F 0 "#PWR31" H 7300 4350 50  0001 C CNN
+F 1 "Earth" H 7300 4450 50  0001 C CNN
+F 2 "" H 7300 4600 50  0000 C CNN
+F 3 "" H 7300 4600 50  0000 C CNN
+	1    7300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3500 5850 3500
+Wire Wire Line
+	3550 3600 5850 3600
+Wire Wire Line
+	3550 3800 5850 3800
+Wire Wire Line
+	3550 3900 5850 3900
+Wire Wire Line
+	3950 4200 3950 3900
+Connection ~ 3950 3900
+Wire Wire Line
+	4300 4200 4300 3800
+Connection ~ 4300 3800
+Wire Wire Line
+	4850 4200 4850 3600
+Connection ~ 4850 3600
+Wire Wire Line
+	5250 4200 5250 3500
+Connection ~ 5250 3500
+Wire Wire Line
+	3950 4500 5250 4500
+Connection ~ 4300 4500
+Connection ~ 4850 4500
+Wire Wire Line
+	4550 4650 4550 4500
+Connection ~ 4550 4500
+Wire Wire Line
+	6500 3200 6500 3050
+Wire Wire Line
+	6500 3050 7300 3050
+Wire Wire Line
+	7300 3050 7300 4600
+Wire Wire Line
+	7300 3700 7050 3700
+Connection ~ 7300 3700
+Text HLabel 8450 3000 2    60   Output ~ 0
+M1P
+Text HLabel 8450 3600 2    60   Output ~ 0
+M1N
+Text HLabel 8450 3800 2    60   Output ~ 0
+M2P
+Text HLabel 8450 4400 2    60   Output ~ 0
+M2N
+$Comp
+L R R2
+U 1 1 58B85B0A
+P 4300 4350
+F 0 "R2" V 4400 4350 50  0000 C CNN
+F 1 "R" V 4200 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4230 4350 50  0001 C CNN
+F 3 "" H 4300 4350 50  0000 C CNN
+F 4 "RC0603JR-074K7L" V 4300 4350 60  0001 C CNN "manf#"
+	1    4300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58B85B47
+P 4850 4350
+F 0 "R3" V 4950 4350 50  0000 C CNN
+F 1 "R" V 4750 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4780 4350 50  0001 C CNN
+F 3 "" H 4850 4350 50  0000 C CNN
+F 4 "RC0603JR-074K7L" V 4850 4350 60  0001 C CNN "manf#"
+	1    4850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58B85B7F
+P 5250 4350
+F 0 "R4" V 5350 4350 50  0000 C CNN
+F 1 "R" V 5150 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5180 4350 50  0001 C CNN
+F 3 "" H 5250 4350 50  0000 C CNN
+F 4 "RC0603JR-074K7L" V 5250 4350 60  0001 C CNN "manf#"
+	1    5250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR28
+U 1 1 58B85D2F
+P 3500 2600
+F 0 "#PWR28" H 3500 2450 50  0001 C CNN
+F 1 "+BATT" H 3500 2740 50  0000 C CNN
+F 2 "" H 3500 2600 50  0000 C CNN
+F 3 "" H 3500 2600 50  0000 C CNN
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2600 5550 2600
+Wire Wire Line
+	5550 2600 5550 3700
+Wire Wire Line
+	5550 3700 5850 3700
+Wire Wire Line
+	7050 3600 8450 3600
+Wire Wire Line
+	7050 3500 7550 3500
+Wire Wire Line
+	7550 3500 7550 3000
+Wire Wire Line
+	7550 3000 8450 3000
+Wire Wire Line
+	7050 3800 8450 3800
+Wire Wire Line
+	7050 3900 7550 3900
+Wire Wire Line
+	7550 3900 7550 4400
+Wire Wire Line
+	7550 4400 8450 4400
+$Comp
+L C C2
+U 1 1 58B85F66
+P 4950 2750
+F 0 "C2" H 4975 2850 50  0000 L CNN
+F 1 "0.1 uF" H 4975 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4988 2600 50  0001 C CNN
+F 3 "" H 4950 2750 50  0000 C CNN
+F 4 "CC0603KRX7R8BB104" H 4950 2750 60  0001 C CNN "manf#"
+	1    4950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58B860FE
+P 4400 2750
+F 0 "C1" H 4425 2850 50  0000 L CNN
+F 1 "22 uF" H 4150 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4438 2600 50  0001 C CNN
+F 3 "" H 4400 2750 50  0000 C CNN
+F 4 "TMK316BBJ226ML-T" H 4400 2750 60  0001 C CNN "manf#"
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 58B8C34D
+P 8050 3250
+F 0 "C3" H 8075 3350 50  0000 L CNN
+F 1 "22 uF" H 8075 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8088 3100 50  0001 C CNN
+F 3 "" H 8050 3250 50  0000 C CNN
+F 4 "TMK316BBJ226ML-T" H 8050 3250 60  0001 C CNN "manf#"
+	1    8050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 58B8C407
+P 8050 4050
+F 0 "C4" H 8075 4150 50  0000 L CNN
+F 1 "22 uF" H 8075 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8088 3900 50  0001 C CNN
+F 3 "" H 8050 4050 50  0000 C CNN
+F 4 "TMK316BBJ226ML-T" H 8050 4050 60  0001 C CNN "manf#"
+	1    8050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4200 8050 4400
+Connection ~ 8050 4400
+Wire Wire Line
+	8050 3900 8050 3800
+Connection ~ 8050 3800
+Wire Wire Line
+	8050 3600 8050 3400
+Connection ~ 8050 3600
+Wire Wire Line
+	8050 3100 8050 3000
+Connection ~ 8050 3000
+Connection ~ 4400 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	4400 2900 4950 2900
+$Comp
+L Earth #PWR30
+U 1 1 58B8C6D0
+P 4650 3000
+F 0 "#PWR30" H 4650 2750 50  0001 C CNN
+F 1 "Earth" H 4650 2850 50  0001 C CNN
+F 2 "" H 4650 3000 50  0000 C CNN
+F 3 "" H 4650 3000 50  0000 C CNN
+	1    4650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3000 4650 2900
+Connection ~ 4650 2900
+$EndSCHEMATC
