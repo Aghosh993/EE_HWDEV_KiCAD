@@ -2,7 +2,7 @@
 
   (general
     (links 66)
-    (no_connects 1)
+    (no_connects 0)
     (area 74.924999 38.924999 222.475001 153.575001)
     (thickness 1.6)
     (drawings 33)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010fc_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -83,11 +83,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Outputs_OshPark/))
+      (outputdirectory Map_Files/))
   )
 
   (net 0 "")
