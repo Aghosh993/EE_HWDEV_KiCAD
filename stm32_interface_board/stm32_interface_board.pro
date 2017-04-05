@@ -1,4 +1,4 @@
-update=Thu 30 Mar 2017 08:01:00 AM EDT
+update=Wed 05 Apr 2017 11:12:27 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=/home/aghosh01/kicad_libraries/PowerManagement
 LibName31=ftdi
 LibName32=/home/aghosh01/kicad_libraries/mechanical
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/aghosh01/kicad_schematic_layouts/AbhisHacks.kicad_wks
+PlotDirectoryName=Schematics/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

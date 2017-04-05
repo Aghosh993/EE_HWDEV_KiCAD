@@ -41,10 +41,10 @@ Title ""
 Date ""
 Rev ""
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "STM-F3-IFACE-001"
+Comment2 "STM-F3-IFACE-101"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
 $EndDescr
 $Comp
 L FT231XS U2

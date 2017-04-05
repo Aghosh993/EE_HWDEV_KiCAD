@@ -38,13 +38,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title ""
-Date ""
-Rev ""
+Date "2017-04-05"
+Rev "Release-0.1"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "STM-F3-IFACE-001"
+Comment2 "STM-F3-IFACE-101"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
 $EndDescr
 $Comp
 L CONN_02X25 P2
@@ -981,4 +981,8 @@ Wire Wire Line
 	1850 3550 2000 3550
 Wire Wire Line
 	950  2750 1350 2750
+Text Notes 4400 2050 0    60   ~ 0
+STM32 Discovery P2
+Text Notes 1150 2400 0    60   ~ 0
+STM32 Discovery P1
 $EndSCHEMATC
