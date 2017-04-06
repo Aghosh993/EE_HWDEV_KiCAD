@@ -2,19 +2,19 @@
 <export version="D">
   <design>
     <source>/home/aghosh01/kicad_projects/stm32_interface_board/stm32_interface_board.sch</source>
-    <date>Wed 05 Apr 2017 11:03:50 AM EDT</date>
+    <date>Thu 06 Apr 2017 07:53:42 AM EDT</date>
     <tool>Eeschema 4.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
         <company/>
-        <rev/>
-        <date/>
+        <rev>Release-0.1</rev>
+        <date>2017-04-05</date>
         <source>stm32_interface_board.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="1" value="STM-F3-IFACE-001"/>
+        <comment number="2" value="STM-F3-IFACE-101"/>
+        <comment number="3" value="Abhimanyu Ghosh"/>
+        <comment number="4" value="Abhimanyu Ghosh"/>
       </title_block>
     </sheet>
     <sheet number="2" name="/MotorDriver/" tstamps="/58B85610/">
@@ -24,10 +24,10 @@
         <rev/>
         <date/>
         <source>MotorDriver.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="1" value="STM-F3-IFACE-001"/>
+        <comment number="2" value="STM-F3-IFACE-101"/>
+        <comment number="3" value="Abhimanyu Ghosh"/>
+        <comment number="4" value="Abhimanyu Ghosh"/>
       </title_block>
     </sheet>
     <sheet number="3" name="/debugFTDI/" tstamps="/58B85615/">
@@ -37,10 +37,10 @@
         <rev/>
         <date/>
         <source>debugFTDI.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="1" value="STM-F3-IFACE-001"/>
+        <comment number="2" value="STM-F3-IFACE-101"/>
+        <comment number="3" value="Abhimanyu Ghosh"/>
+        <comment number="4" value="Abhimanyu Ghosh"/>
       </title_block>
     </sheet>
   </design>
@@ -98,6 +98,9 @@
     <comp ref="P9">
       <value>CONN_01X03</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <fields>
+        <field name="manf#">61300311021</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X03"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58B900E0</tstamp>
@@ -185,6 +188,9 @@
     <comp ref="P10">
       <value>CONN_01X03</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <fields>
+        <field name="manf#">61300311021</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X03"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58BBE3DA</tstamp>
@@ -226,6 +232,13 @@
       <libsource lib="mechanical" part="PTH"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58DD06ED</tstamp>
+    </comp>
+    <comp ref="TH4">
+      <value>PTH</value>
+      <footprint>mechanical:PTH</footprint>
+      <libsource lib="mechanical" part="PTH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58E62AF3</tstamp>
     </comp>
     <comp ref="U1">
       <value>A3909</value>
@@ -721,14 +734,11 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="PowerManagement">
-      <uri>/home/aghosh01/kicad_libraries/PowerManagement.lib</uri>
-    </library>
     <library logical="ftdi">
       <uri>/usr/share/kicad/library/ftdi.lib</uri>
     </library>
-    <library logical="mechanical">
-      <uri>/home/aghosh01/kicad_libraries/mechanical.lib</uri>
+    <library logical="PowerManagement">
+      <uri>/home/aghosh01/kicad_libraries/PowerManagement.lib</uri>
     </library>
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
@@ -736,54 +746,58 @@
     <library logical="regul">
       <uri>/usr/share/kicad/library/regul.lib</uri>
     </library>
+    <library logical="mechanical">
+      <uri>/home/aghosh01/kicad_libraries/mechanical.lib</uri>
+    </library>
     <library logical="conn">
       <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/TRIG1">
-      <node ref="P5" pin="3"/>
-      <node ref="P3" pin="34"/>
+    <net code="1" name="/TRIG2">
+      <node ref="P2" pin="22"/>
+      <node ref="P6" pin="3"/>
     </net>
-    <net code="2" name="/MotorDriver/M2N">
+    <net code="2" name="/MotorDriver/M1N">
+      <node ref="U1" pin="9"/>
+      <node ref="P7" pin="2"/>
+    </net>
+    <net code="3" name="/MotorDriver/M2P">
+      <node ref="P8" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="4" name="/MotorDriver/M2N">
       <node ref="U1" pin="6"/>
       <node ref="P8" pin="2"/>
     </net>
-    <net code="3" name="/MotorDriver/M2P">
-      <node ref="U1" pin="7"/>
-      <node ref="P8" pin="1"/>
-    </net>
-    <net code="4" name="+5V">
+    <net code="5" name="+5V">
+      <node ref="C16" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="P3" pin="2"/>
       <node ref="P4" pin="4"/>
       <node ref="P3" pin="1"/>
-      <node ref="P3" pin="2"/>
       <node ref="U3" pin="3"/>
-      <node ref="P10" pin="2"/>
-      <node ref="P6" pin="4"/>
-      <node ref="C13" pin="1"/>
-      <node ref="C15" pin="1"/>
-      <node ref="C14" pin="1"/>
-      <node ref="C16" pin="1"/>
+      <node ref="P9" pin="3"/>
+      <node ref="P10" pin="3"/>
       <node ref="P5" pin="4"/>
-      <node ref="P9" pin="2"/>
+      <node ref="P6" pin="4"/>
     </net>
-    <net code="5" name="/AIN1">
-      <node ref="P10" pin="1"/>
+    <net code="6" name="/AIN1">
       <node ref="P2" pin="14"/>
+      <node ref="P10" pin="1"/>
     </net>
-    <net code="6" name="/ECHO2">
+    <net code="7" name="/ECHO2">
       <node ref="P6" pin="2"/>
-      <node ref="P2" pin="22"/>
-    </net>
-    <net code="7" name="/ECHO1">
-      <node ref="P5" pin="2"/>
-      <node ref="P3" pin="39"/>
-    </net>
-    <net code="8" name="Net-(P3-Pad4)">
-      <node ref="P3" pin="4"/>
-    </net>
-    <net code="9" name="Net-(P3-Pad3)">
       <node ref="P3" pin="3"/>
+    </net>
+    <net code="8" name="/ECHO1">
+      <node ref="P3" pin="39"/>
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="9" name="Net-(P3-Pad4)">
+      <node ref="P3" pin="4"/>
     </net>
     <net code="10" name="Net-(P3-Pad6)">
       <node ref="P3" pin="6"/>
@@ -800,130 +814,129 @@
     <net code="14" name="Net-(P3-Pad7)">
       <node ref="P3" pin="7"/>
     </net>
-    <net code="15" name="Net-(P3-Pad9)">
+    <net code="15" name="/MCU_TX">
+      <node ref="P3" pin="44"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="16" name="/MCU_RX">
+      <node ref="P3" pin="43"/>
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="17" name="Net-(P3-Pad9)">
       <node ref="P3" pin="9"/>
-    </net>
-    <net code="16" name="Net-(P3-Pad12)">
-      <node ref="P3" pin="12"/>
-    </net>
-    <net code="17" name="Net-(P3-Pad18)">
-      <node ref="P3" pin="18"/>
     </net>
     <net code="18" name="/debugFTDI/USBD+">
       <node ref="R6" pin="2"/>
       <node ref="P1" pin="3"/>
     </net>
-    <net code="19" name="/MCU_TX">
-      <node ref="U2" pin="4"/>
-      <node ref="P3" pin="44"/>
-    </net>
-    <net code="20" name="/MCU_RX">
-      <node ref="U2" pin="20"/>
-      <node ref="P3" pin="43"/>
-    </net>
-    <net code="21" name="Net-(P3-Pad13)">
-      <node ref="P3" pin="13"/>
-    </net>
-    <net code="22" name="/debugFTDI/USBD-">
-      <node ref="R5" pin="2"/>
+    <net code="19" name="/debugFTDI/USBD-">
       <node ref="P1" pin="2"/>
+      <node ref="R5" pin="2"/>
     </net>
-    <net code="23" name="/debugFTDI/USB_5V">
-      <node ref="P1" pin="1"/>
-      <node ref="C5" pin="1"/>
+    <net code="20" name="/debugFTDI/USB_5V">
       <node ref="L1" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="P1" pin="1"/>
     </net>
-    <net code="24" name="/MotorDriver/M1P">
-      <node ref="U1" pin="10"/>
+    <net code="21" name="/MotorDriver/M1P">
       <node ref="P7" pin="1"/>
+      <node ref="U1" pin="10"/>
     </net>
-    <net code="25" name="/MotorDriver/M1N">
-      <node ref="U1" pin="9"/>
-      <node ref="P7" pin="2"/>
-    </net>
-    <net code="26" name="Net-(P2-Pad18)">
-      <node ref="P2" pin="18"/>
-    </net>
-    <net code="27" name="Net-(P2-Pad37)">
-      <node ref="P2" pin="37"/>
-    </net>
-    <net code="28" name="Net-(P2-Pad36)">
-      <node ref="P2" pin="36"/>
-    </net>
-    <net code="29" name="Net-(P2-Pad35)">
-      <node ref="P2" pin="35"/>
-    </net>
-    <net code="30" name="Net-(P2-Pad34)">
-      <node ref="P2" pin="34"/>
-    </net>
-    <net code="31" name="Net-(P2-Pad33)">
-      <node ref="P2" pin="33"/>
-    </net>
-    <net code="32" name="Net-(P2-Pad32)">
-      <node ref="P2" pin="32"/>
-    </net>
-    <net code="33" name="Net-(P2-Pad31)">
-      <node ref="P2" pin="31"/>
-    </net>
-    <net code="34" name="Net-(P2-Pad30)">
-      <node ref="P2" pin="30"/>
-    </net>
-    <net code="35" name="Net-(P2-Pad29)">
-      <node ref="P2" pin="29"/>
-    </net>
-    <net code="36" name="Net-(P2-Pad26)">
-      <node ref="P2" pin="26"/>
-    </net>
-    <net code="37" name="Net-(P2-Pad24)">
+    <net code="22" name="Net-(P2-Pad24)">
       <node ref="P2" pin="24"/>
     </net>
-    <net code="38" name="Net-(P2-Pad20)">
-      <node ref="P2" pin="20"/>
+    <net code="23" name="Net-(P2-Pad40)">
+      <node ref="P2" pin="40"/>
     </net>
-    <net code="39" name="Net-(P2-Pad16)">
-      <node ref="P2" pin="16"/>
+    <net code="24" name="Net-(P2-Pad39)">
+      <node ref="P2" pin="39"/>
     </net>
-    <net code="40" name="Net-(P2-Pad38)">
+    <net code="25" name="Net-(P2-Pad38)">
       <node ref="P2" pin="38"/>
     </net>
-    <net code="41" name="Net-(P2-Pad25)">
+    <net code="26" name="Net-(P2-Pad37)">
+      <node ref="P2" pin="37"/>
+    </net>
+    <net code="27" name="Net-(P2-Pad36)">
+      <node ref="P2" pin="36"/>
+    </net>
+    <net code="28" name="Net-(P2-Pad35)">
+      <node ref="P2" pin="35"/>
+    </net>
+    <net code="29" name="Net-(P2-Pad34)">
+      <node ref="P2" pin="34"/>
+    </net>
+    <net code="30" name="Net-(P2-Pad33)">
+      <node ref="P2" pin="33"/>
+    </net>
+    <net code="31" name="Net-(P2-Pad32)">
+      <node ref="P2" pin="32"/>
+    </net>
+    <net code="32" name="Net-(P2-Pad31)">
+      <node ref="P2" pin="31"/>
+    </net>
+    <net code="33" name="Net-(P2-Pad30)">
+      <node ref="P2" pin="30"/>
+    </net>
+    <net code="34" name="Net-(P2-Pad29)">
+      <node ref="P2" pin="29"/>
+    </net>
+    <net code="35" name="Net-(P2-Pad26)">
+      <node ref="P2" pin="26"/>
+    </net>
+    <net code="36" name="Net-(P2-Pad41)">
+      <node ref="P2" pin="41"/>
+    </net>
+    <net code="37" name="Net-(P2-Pad20)">
+      <node ref="P2" pin="20"/>
+    </net>
+    <net code="38" name="Net-(P2-Pad16)">
+      <node ref="P2" pin="16"/>
+    </net>
+    <net code="39" name="Net-(P2-Pad18)">
+      <node ref="P2" pin="18"/>
+    </net>
+    <net code="40" name="Net-(P2-Pad25)">
       <node ref="P2" pin="25"/>
     </net>
-    <net code="42" name="Net-(P2-Pad23)">
+    <net code="41" name="Net-(P2-Pad23)">
       <node ref="P2" pin="23"/>
     </net>
-    <net code="43" name="Net-(P2-Pad21)">
+    <net code="42" name="Net-(P2-Pad21)">
       <node ref="P2" pin="21"/>
     </net>
-    <net code="44" name="Net-(P2-Pad19)">
+    <net code="43" name="Net-(P2-Pad19)">
       <node ref="P2" pin="19"/>
     </net>
-    <net code="45" name="Net-(P2-Pad17)">
+    <net code="44" name="Net-(P2-Pad17)">
       <node ref="P2" pin="17"/>
     </net>
-    <net code="46" name="Net-(P2-Pad15)">
+    <net code="45" name="Net-(P2-Pad15)">
       <node ref="P2" pin="15"/>
     </net>
-    <net code="47" name="Net-(P2-Pad13)">
+    <net code="46" name="Net-(P2-Pad13)">
       <node ref="P2" pin="13"/>
     </net>
-    <net code="48" name="Net-(P2-Pad12)">
+    <net code="47" name="Net-(P2-Pad12)">
       <node ref="P2" pin="12"/>
     </net>
-    <net code="49" name="Net-(P2-Pad10)">
+    <net code="48" name="Net-(P2-Pad10)">
       <node ref="P2" pin="10"/>
     </net>
-    <net code="50" name="Net-(P2-Pad9)">
+    <net code="49" name="Net-(P2-Pad9)">
       <node ref="P2" pin="9"/>
     </net>
-    <net code="51" name="Net-(P2-Pad8)">
-      <node ref="P2" pin="8"/>
+    <net code="50" name="Net-(P3-Pad38)">
+      <node ref="P3" pin="38"/>
     </net>
-    <net code="52" name="Net-(P2-Pad7)">
-      <node ref="P2" pin="7"/>
+    <net code="51" name="Net-(P3-Pad12)">
+      <node ref="P3" pin="12"/>
     </net>
-    <net code="53" name="Net-(P3-Pad48)">
-      <node ref="P3" pin="48"/>
+    <net code="52" name="Net-(P3-Pad18)">
+      <node ref="P3" pin="18"/>
+    </net>
+    <net code="53" name="Net-(P3-Pad13)">
+      <node ref="P3" pin="13"/>
     </net>
     <net code="54" name="Net-(P3-Pad17)">
       <node ref="P3" pin="17"/>
@@ -955,14 +968,14 @@
     <net code="63" name="Net-(P3-Pad35)">
       <node ref="P3" pin="35"/>
     </net>
-    <net code="64" name="Net-(P3-Pad38)">
-      <node ref="P3" pin="38"/>
-    </net>
-    <net code="65" name="Net-(P3-Pad37)">
+    <net code="64" name="Net-(P3-Pad37)">
       <node ref="P3" pin="37"/>
     </net>
-    <net code="66" name="Net-(P3-Pad46)">
+    <net code="65" name="Net-(P3-Pad46)">
       <node ref="P3" pin="46"/>
+    </net>
+    <net code="66" name="Net-(P3-Pad48)">
+      <node ref="P3" pin="48"/>
     </net>
     <net code="67" name="Net-(P3-Pad45)">
       <node ref="P3" pin="45"/>
@@ -991,137 +1004,138 @@
     <net code="75" name="Net-(P2-Pad42)">
       <node ref="P2" pin="42"/>
     </net>
-    <net code="76" name="Net-(P2-Pad41)">
-      <node ref="P2" pin="41"/>
-    </net>
-    <net code="77" name="Net-(P2-Pad40)">
-      <node ref="P2" pin="40"/>
-    </net>
-    <net code="78" name="Net-(P2-Pad39)">
-      <node ref="P2" pin="39"/>
-    </net>
-    <net code="79" name="Net-(P3-Pad20)">
-      <node ref="P3" pin="20"/>
-    </net>
-    <net code="80" name="Net-(P3-Pad19)">
+    <net code="76" name="Net-(P3-Pad19)">
       <node ref="P3" pin="19"/>
     </net>
-    <net code="81" name="Net-(P3-Pad32)">
-      <node ref="P3" pin="32"/>
+    <net code="77" name="Net-(P3-Pad27)">
+      <node ref="P3" pin="27"/>
     </net>
-    <net code="82" name="Earth">
-      <node ref="P3" pin="49"/>
-      <node ref="C9" pin="2"/>
-      <node ref="U1" pin="11"/>
-      <node ref="P11" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="TH1" pin="1"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="P4" pin="1"/>
-      <node ref="U1" pin="8"/>
-      <node ref="R4" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="R2" pin="2"/>
-      <node ref="P3" pin="50"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="TH2" pin="1"/>
-      <node ref="TH3" pin="1"/>
-      <node ref="P1" pin="6"/>
-      <node ref="P1" pin="5"/>
-      <node ref="C14" pin="2"/>
-      <node ref="P2" pin="49"/>
-      <node ref="U2" pin="16"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="P10" pin="3"/>
-      <node ref="P2" pin="50"/>
-      <node ref="P6" pin="1"/>
-      <node ref="P5" pin="1"/>
-      <node ref="U2" pin="6"/>
-      <node ref="P9" pin="3"/>
-      <node ref="U3" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C12" pin="2"/>
-    </net>
-    <net code="83" name="Net-(P3-Pad15)">
-      <node ref="P3" pin="15"/>
-    </net>
-    <net code="84" name="Net-(P3-Pad14)">
-      <node ref="P3" pin="14"/>
-    </net>
-    <net code="85" name="Net-(P3-Pad11)">
-      <node ref="P3" pin="11"/>
-    </net>
-    <net code="86" name="+BATT">
-      <node ref="U1" pin="3"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="U3" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="P11" pin="2"/>
-    </net>
-    <net code="87" name="/M1_1">
-      <node ref="U1" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="P3" pin="28"/>
-    </net>
-    <net code="88" name="/TRIG2">
-      <node ref="P6" pin="3"/>
-      <node ref="P2" pin="5"/>
-    </net>
-    <net code="89" name="Net-(P3-Pad40)">
-      <node ref="P3" pin="40"/>
-    </net>
-    <net code="90" name="Net-(P3-Pad42)">
-      <node ref="P3" pin="42"/>
-    </net>
-    <net code="91" name="Net-(P3-Pad41)">
-      <node ref="P3" pin="41"/>
-    </net>
-    <net code="92" name="/M1_2">
+    <net code="78" name="/M1_2">
       <node ref="R3" pin="1"/>
       <node ref="U1" pin="2"/>
       <node ref="P3" pin="25"/>
     </net>
-    <net code="93" name="/M2_1">
+    <net code="79" name="/M2_2">
+      <node ref="U1" pin="5"/>
+      <node ref="R1" pin="1"/>
+      <node ref="P3" pin="30"/>
+    </net>
+    <net code="80" name="/M2_1">
       <node ref="R2" pin="1"/>
       <node ref="P3" pin="29"/>
       <node ref="U1" pin="4"/>
     </net>
-    <net code="94" name="/M2_2">
-      <node ref="R1" pin="1"/>
-      <node ref="U1" pin="5"/>
-      <node ref="P3" pin="30"/>
+    <net code="81" name="/M1_1">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="P3" pin="28"/>
     </net>
-    <net code="95" name="Net-(P3-Pad27)">
-      <node ref="P3" pin="27"/>
-    </net>
-    <net code="96" name="Net-(P3-Pad16)">
+    <net code="82" name="Net-(P3-Pad16)">
       <node ref="P3" pin="16"/>
     </net>
-    <net code="97" name="/ECHO0">
-      <node ref="P2" pin="27"/>
-      <node ref="P4" pin="2"/>
+    <net code="83" name="Net-(P3-Pad15)">
+      <node ref="P3" pin="15"/>
     </net>
-    <net code="98" name="/AIN0">
-      <node ref="P9" pin="1"/>
-      <node ref="P2" pin="11"/>
+    <net code="84" name="Net-(P3-Pad20)">
+      <node ref="P3" pin="20"/>
     </net>
-    <net code="99" name="/TRIG0">
+    <net code="85" name="Net-(P3-Pad32)">
+      <node ref="P3" pin="32"/>
+    </net>
+    <net code="86" name="Net-(P3-Pad14)">
+      <node ref="P3" pin="14"/>
+    </net>
+    <net code="87" name="Net-(P3-Pad11)">
+      <node ref="P3" pin="11"/>
+    </net>
+    <net code="88" name="Net-(P3-Pad40)">
+      <node ref="P3" pin="40"/>
+    </net>
+    <net code="89" name="Earth">
+      <node ref="R3" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="11"/>
+      <node ref="R1" pin="2"/>
+      <node ref="P1" pin="6"/>
+      <node ref="C7" pin="2"/>
+      <node ref="TH4" pin="1"/>
+      <node ref="P3" pin="50"/>
+      <node ref="TH1" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="TH2" pin="1"/>
+      <node ref="TH3" pin="1"/>
+      <node ref="P2" pin="50"/>
+      <node ref="C10" pin="2"/>
+      <node ref="P11" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="P3" pin="49"/>
+      <node ref="P1" pin="5"/>
+      <node ref="P4" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="P9" pin="2"/>
+      <node ref="U2" pin="16"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="P5" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="P6" pin="1"/>
+      <node ref="P2" pin="49"/>
+      <node ref="P10" pin="2"/>
+    </net>
+    <net code="90" name="Net-(P2-Pad5)">
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="91" name="/TRIG1">
+      <node ref="P3" pin="34"/>
+      <node ref="P5" pin="3"/>
+    </net>
+    <net code="92" name="+BATT">
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P11" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C12" pin="1"/>
+    </net>
+    <net code="93" name="Net-(P3-Pad42)">
+      <node ref="P3" pin="42"/>
+    </net>
+    <net code="94" name="Net-(P3-Pad41)">
+      <node ref="P3" pin="41"/>
+    </net>
+    <net code="95" name="/TRIG0">
       <node ref="P4" pin="3"/>
       <node ref="P2" pin="28"/>
     </net>
-    <net code="100" name="Net-(P2-Pad2)">
+    <net code="96" name="/ECHO0">
+      <node ref="P4" pin="2"/>
+      <node ref="P2" pin="27"/>
+    </net>
+    <net code="97" name="/AIN0">
+      <node ref="P2" pin="11"/>
+      <node ref="P9" pin="1"/>
+    </net>
+    <net code="98" name="Net-(P2-Pad2)">
       <node ref="P2" pin="2"/>
     </net>
-    <net code="101" name="Net-(P1-Pad4)">
+    <net code="99" name="Net-(P1-Pad4)">
       <node ref="P1" pin="4"/>
+    </net>
+    <net code="100" name="Net-(P2-Pad8)">
+      <node ref="P2" pin="8"/>
+    </net>
+    <net code="101" name="Net-(P2-Pad7)">
+      <node ref="P2" pin="7"/>
     </net>
     <net code="102" name="Net-(P2-Pad6)">
       <node ref="P2" pin="6"/>
@@ -1137,13 +1151,13 @@
     </net>
     <net code="106" name="Net-(C8-Pad1)">
       <node ref="R5" pin="1"/>
-      <node ref="U2" pin="12"/>
       <node ref="C8" pin="1"/>
+      <node ref="U2" pin="12"/>
     </net>
     <net code="107" name="Net-(C7-Pad1)">
-      <node ref="U2" pin="11"/>
-      <node ref="R6" pin="1"/>
       <node ref="C7" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="11"/>
     </net>
     <net code="108" name="Net-(U2-Pad19)">
       <node ref="U2" pin="19"/>
@@ -1176,17 +1190,17 @@
       <node ref="U2" pin="1"/>
     </net>
     <net code="118" name="Net-(C10-Pad1)">
-      <node ref="U2" pin="14"/>
-      <node ref="C11" pin="1"/>
       <node ref="C10" pin="1"/>
+      <node ref="C11" pin="1"/>
       <node ref="C9" pin="1"/>
-      <node ref="U2" pin="13"/>
+      <node ref="U2" pin="14"/>
       <node ref="U2" pin="3"/>
+      <node ref="U2" pin="13"/>
     </net>
     <net code="119" name="Net-(C6-Pad1)">
-      <node ref="L1" pin="1"/>
-      <node ref="U2" pin="15"/>
       <node ref="C6" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="L1" pin="1"/>
     </net>
   </nets>
 </export>
