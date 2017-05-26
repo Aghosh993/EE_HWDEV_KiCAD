@@ -1,4 +1,4 @@
-update=Tue 10 Jan 2017 12:05:26 AM EST
+update=Fri 26 May 2017 05:11:33 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,7 +67,7 @@ LibName35=/home/aghosh01/kicad_libraries/mechanical
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/home/aghosh01/kicad_schematic_layouts/CRRL_Basic_rev001.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=Schematics/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

@@ -40,13 +40,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title ""
-Date ""
-Rev ""
+Date "2017-05-26"
+Rev "1.3"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "QUAD001-001"
+Comment2 "QUAD001-101"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
 $EndDescr
 $Comp
 L PTH08T230WAZT U1
