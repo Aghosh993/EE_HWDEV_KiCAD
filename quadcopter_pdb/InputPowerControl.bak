@@ -40,19 +40,19 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title ""
-Date ""
-Rev ""
+Date "2017-05-26"
+Rev "1.3"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "QUAD001-001"
+Comment2 "QUAD001-101"
+Comment3 "Abhimanyu Ghosh"
+Comment4 "Abhimanyu Ghosh"
 $EndDescr
 $Comp
-L Earth #PWR028
+L Earth #PWR032
 U 1 1 58B45603
 P 6300 4350
-F 0 "#PWR028" H 6300 4100 50  0001 C CNN
+F 0 "#PWR032" H 6300 4100 50  0001 C CNN
 F 1 "Earth" H 6300 4200 50  0001 C CNN
 F 2 "" H 6300 4350 50  0000 C CNN
 F 3 "" H 6300 4350 50  0000 C CNN
@@ -105,10 +105,10 @@ F 3 "" H 4600 3100 50  0000 C CNN
 $EndComp
 NoConn ~ 4900 3000
 $Comp
-L PWR_FLAG #FLG029
+L PWR_FLAG #FLG033
 U 1 1 58B45627
 P 6950 3000
-F 0 "#FLG029" H 6950 3095 50  0001 C CNN
+F 0 "#FLG033" H 6950 3095 50  0001 C CNN
 F 1 "PWR_FLAG" H 6950 3180 50  0000 C CNN
 F 2 "" H 6950 3000 50  0000 C CNN
 F 3 "" H 6950 3000 50  0000 C CNN
